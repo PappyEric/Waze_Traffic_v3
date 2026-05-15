@@ -1,0 +1,14 @@
+{
+  "servers": {
+    "mssql-gisdb02": {
+      "command": "npx",
+      "args": ["-y", "mcp-mssql-server"],
+      "env": {
+        "DB_SERVER": "gisdb02\\gissqlserver",
+        "DB_DATABASE_NAME": "KCGIS",
+        "DB_TRUST_SERVER_CERTIFICATE": "true",
+        "DB_TRUSTED_CONNECTION": "true"
+      }
+    }
+  }
+}
