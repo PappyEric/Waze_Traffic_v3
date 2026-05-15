@@ -2731,3 +2731,9 @@
 2026-05-15 15:56:36,278 [INFO] Inserted 63 jams
 2026-05-15 15:56:36,280 [INFO] No irregularities to insert
 2026-05-15 15:56:36,284 [INFO] Cycle complete in 1.58s — 112 alerts, 63 jams, 0 irregularities
+2026-05-15 15:58:06,287 [INFO] Fetching Waze feed...
+2026-05-15 15:58:07,433 [INFO] Received: 114 alerts, 67 jams, 0 irregularities
+2026-05-15 15:58:07,615 [INFO] Inserted 114 alerts
+2026-05-15 15:58:07,796 [INFO] Inserted 67 jams
+2026-05-15 15:58:07,798 [INFO] No irregularities to insert
+2026-05-15 15:58:07,801 [INFO] Cycle complete in 1.51s — 114 alerts, 67 jams, 0 irregularities
