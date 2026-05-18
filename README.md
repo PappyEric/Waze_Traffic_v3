@@ -117,5 +117,3 @@ python install_service.py start
 - **Feed Format**: Waze Partner Hub JSON
 
 ---
-
-_Documentation generated for Metro 911 / Kanawha County GIS._
