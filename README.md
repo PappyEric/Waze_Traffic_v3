@@ -1,6 +1,5 @@
 # Real-Time Waze Traffic Integration for 911 CAD
 
-**A Guide for GIS Administrators**
 
 This document outlines how to integrate a Waze Partner Hub traffic feed into an ArcGIS Enterprise environment for use in Tyler Technologies CAD (or any dynamic mapping client).
 
