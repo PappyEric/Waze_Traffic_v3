@@ -146,5 +146,3 @@ Logs are written on `ADMIN8854` at:
 `D:\Gemini_Projects\Waze_Traffic_v3\ingest\logs\waze_ingest.log`
 
 ---
-
-_Documentation generated for Metro 911 / Kanawha County GIS._
