@@ -88,23 +88,52 @@ To keep the data "live," ArcGIS Server must reference the database directly.
 ---
 
 ## 6. Automating the Service
-To ensure the script runs 24/7 and restarts if the server reboots, install it as a Windows Service.
+To ensure the script runs 24/7 and restarts if the computer reboots, it is installed as a Windows Service.
 
-### Using `pywin32`:
-```powershell
-# Install the service
-python install_service.py install
+### Operational Architecture (Local Environment)
+Due to internet connectivity restrictions on the database server (`kcpssqlprod`), the ingest polling service is installed on the local workstation acting as the gateway (with both internet access to the Waze API and database network access to SQL server).
 
-# Start the service
-python install_service.py start
-```
-
-## Summary of Local Environment (Kanawha County Example)
-*   **SQL Server**: `kcpssqlprod`
+*   **Ingest Host (Workstation)**: `ADMIN8854` (Running as a Windows Service)
+*   **Database Server**: `kcpssqlprod` (Receiving SQL inserts over the network)
+*   **Service Name**: `WazeTrafficIngest`
+*   **Refresh Rate**: 90 Seconds
 *   **Database**: `NWSAegisGISDB_KanawhaCo_WV`
 *   **Service Account**: `nwssvc`
-*   **Refresh Rate**: 90 Seconds
-*   **Feed Format**: Waze Partner Hub JSON
 
 ---
+
+## 7. Service Management & Operations
+
+### Service Status and Control
+To manage the service on **ADMIN8854**, open **PowerShell as Administrator** and use the standard Windows Service cmdlets:
+
+```powershell
+# Check status
+Get-Service WazeTrafficIngest
+
+# Start
+Start-Service WazeTrafficIngest
+
+# Stop
+Stop-Service WazeTrafficIngest
+
+# Restart
+Restart-Service WazeTrafficIngest
+```
+
+### 💡 Frequently Asked Operational Questions
+
+#### Does it run when I log out of `emeadows`?
+**Yes.** The service runs in the background under the System context. Once installed, it is completely independent of user logon sessions. You can safely log off, and it will keep polling.
+
+#### Will the computer sleeping stop the script?
+**No, sleep is disabled.** Workstation `ADMIN8854` has its power scheme configured to **"Never Sleep"** when plugged into AC power. As long as it has power, the script will stay active.
+
+#### Where are the logs located?
+Logs are written on `ADMIN8854` at:
+`D:\Gemini_Projects\Waze_Traffic_v3\ingest\logs\waze_ingest.log`
+
+---
+
 *Documentation generated for Metro 911 / Kanawha County GIS.*
+

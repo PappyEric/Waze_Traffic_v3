@@ -2737,3 +2737,863 @@
 2026-05-15 15:58:07,796 [INFO] Inserted 67 jams
 2026-05-15 15:58:07,798 [INFO] No irregularities to insert
 2026-05-15 15:58:07,801 [INFO] Cycle complete in 1.51s — 114 alerts, 67 jams, 0 irregularities
+2026-05-15 15:59:37,804 [INFO] Fetching Waze feed...
+2026-05-15 15:59:38,990 [INFO] Received: 115 alerts, 72 jams, 0 irregularities
+2026-05-15 15:59:39,199 [INFO] Inserted 115 alerts
+2026-05-15 15:59:39,409 [INFO] Inserted 72 jams
+2026-05-15 15:59:39,411 [INFO] No irregularities to insert
+2026-05-15 15:59:39,413 [INFO] Cycle complete in 1.61s — 115 alerts, 72 jams, 0 irregularities
+2026-05-15 16:01:09,415 [INFO] Fetching Waze feed...
+2026-05-15 16:01:10,502 [INFO] Received: 108 alerts, 67 jams, 0 irregularities
+2026-05-15 16:01:10,677 [INFO] Inserted 108 alerts
+2026-05-15 16:01:10,888 [INFO] Inserted 67 jams
+2026-05-15 16:01:10,891 [INFO] No irregularities to insert
+2026-05-15 16:01:10,899 [INFO] Cycle complete in 1.48s — 108 alerts, 67 jams, 0 irregularities
+2026-05-15 16:02:40,901 [INFO] Fetching Waze feed...
+2026-05-15 16:02:42,043 [INFO] Received: 110 alerts, 60 jams, 0 irregularities
+2026-05-15 16:02:42,260 [INFO] Inserted 110 alerts
+2026-05-15 16:02:42,395 [INFO] Inserted 60 jams
+2026-05-15 16:02:42,397 [INFO] No irregularities to insert
+2026-05-15 16:02:42,399 [INFO] Cycle complete in 1.5s — 110 alerts, 60 jams, 0 irregularities
+2026-05-15 16:04:12,401 [INFO] Fetching Waze feed...
+2026-05-15 16:04:13,522 [INFO] Received: 110 alerts, 63 jams, 0 irregularities
+2026-05-15 16:04:13,713 [INFO] Inserted 110 alerts
+2026-05-15 16:04:13,939 [INFO] Inserted 63 jams
+2026-05-15 16:04:13,941 [INFO] No irregularities to insert
+2026-05-15 16:04:13,943 [INFO] Cycle complete in 1.54s — 110 alerts, 63 jams, 0 irregularities
+2026-05-15 16:05:43,945 [INFO] Fetching Waze feed...
+2026-05-15 16:05:45,075 [INFO] Received: 109 alerts, 55 jams, 0 irregularities
+2026-05-15 16:05:45,295 [INFO] Inserted 109 alerts
+2026-05-15 16:05:45,443 [INFO] Inserted 55 jams
+2026-05-15 16:05:45,445 [INFO] No irregularities to insert
+2026-05-15 16:05:45,447 [INFO] Cycle complete in 1.5s — 109 alerts, 55 jams, 0 irregularities
+2026-05-15 16:07:15,449 [INFO] Fetching Waze feed...
+2026-05-15 16:07:16,573 [INFO] Received: 110 alerts, 58 jams, 0 irregularities
+2026-05-15 16:07:16,793 [INFO] Inserted 110 alerts
+2026-05-15 16:07:16,966 [INFO] Inserted 58 jams
+2026-05-15 16:07:16,968 [INFO] No irregularities to insert
+2026-05-15 16:07:16,970 [INFO] Cycle complete in 1.52s — 110 alerts, 58 jams, 0 irregularities
+2026-05-15 16:08:46,972 [INFO] Fetching Waze feed...
+2026-05-15 16:08:48,070 [INFO] Received: 110 alerts, 58 jams, 0 irregularities
+2026-05-15 16:08:48,286 [INFO] Inserted 110 alerts
+2026-05-15 16:08:48,476 [INFO] Inserted 58 jams
+2026-05-15 16:08:48,479 [INFO] No irregularities to insert
+2026-05-15 16:08:48,482 [INFO] Cycle complete in 1.51s — 110 alerts, 58 jams, 0 irregularities
+2026-05-15 16:10:18,485 [INFO] Fetching Waze feed...
+2026-05-15 16:10:19,570 [INFO] Received: 110 alerts, 60 jams, 0 irregularities
+2026-05-15 16:10:19,787 [INFO] Inserted 110 alerts
+2026-05-15 16:10:19,946 [INFO] Inserted 60 jams
+2026-05-15 16:10:19,948 [INFO] No irregularities to insert
+2026-05-15 16:10:19,952 [INFO] Cycle complete in 1.47s — 110 alerts, 60 jams, 0 irregularities
+2026-05-15 16:11:49,954 [INFO] Fetching Waze feed...
+2026-05-15 16:11:51,030 [INFO] Received: 114 alerts, 63 jams, 0 irregularities
+2026-05-15 16:11:51,276 [INFO] Inserted 114 alerts
+2026-05-15 16:11:51,428 [INFO] Inserted 63 jams
+2026-05-15 16:11:51,430 [INFO] No irregularities to insert
+2026-05-15 16:11:51,441 [INFO] Cycle complete in 1.49s — 114 alerts, 63 jams, 0 irregularities
+2026-05-15 16:13:21,443 [INFO] Fetching Waze feed...
+2026-05-15 16:13:22,579 [INFO] Received: 112 alerts, 58 jams, 0 irregularities
+2026-05-15 16:13:22,826 [INFO] Inserted 112 alerts
+2026-05-15 16:13:22,951 [INFO] Inserted 58 jams
+2026-05-15 16:13:22,953 [INFO] No irregularities to insert
+2026-05-15 16:13:22,955 [INFO] Cycle complete in 1.51s — 112 alerts, 58 jams, 0 irregularities
+2026-05-15 16:14:52,957 [INFO] Fetching Waze feed...
+2026-05-15 16:14:54,096 [INFO] Received: 112 alerts, 54 jams, 0 irregularities
+2026-05-15 16:14:54,336 [INFO] Inserted 112 alerts
+2026-05-15 16:14:54,475 [INFO] Inserted 54 jams
+2026-05-15 16:14:54,477 [INFO] No irregularities to insert
+2026-05-15 16:14:54,479 [INFO] Cycle complete in 1.52s — 112 alerts, 54 jams, 0 irregularities
+2026-05-15 16:16:24,481 [INFO] Fetching Waze feed...
+2026-05-15 16:16:25,562 [INFO] Received: 113 alerts, 51 jams, 0 irregularities
+2026-05-15 16:16:25,802 [INFO] Inserted 113 alerts
+2026-05-15 16:16:25,946 [INFO] Inserted 51 jams
+2026-05-15 16:16:25,948 [INFO] No irregularities to insert
+2026-05-15 16:16:25,950 [INFO] Cycle complete in 1.47s — 113 alerts, 51 jams, 0 irregularities
+2026-05-15 16:17:55,952 [INFO] Fetching Waze feed...
+2026-05-15 16:17:57,081 [INFO] Received: 115 alerts, 51 jams, 0 irregularities
+2026-05-15 16:17:57,298 [INFO] Inserted 115 alerts
+2026-05-15 16:17:57,470 [INFO] Inserted 51 jams
+2026-05-15 16:17:57,473 [INFO] No irregularities to insert
+2026-05-15 16:17:57,476 [INFO] Cycle complete in 1.52s — 115 alerts, 51 jams, 0 irregularities
+2026-05-15 16:19:27,479 [INFO] Fetching Waze feed...
+2026-05-15 16:19:28,536 [INFO] Received: 111 alerts, 57 jams, 0 irregularities
+2026-05-15 16:19:28,726 [INFO] Inserted 111 alerts
+2026-05-15 16:19:28,905 [INFO] Inserted 57 jams
+2026-05-15 16:19:28,907 [INFO] No irregularities to insert
+2026-05-15 16:19:28,909 [INFO] Cycle complete in 1.43s — 111 alerts, 57 jams, 0 irregularities
+2026-05-15 16:20:58,911 [INFO] Fetching Waze feed...
+2026-05-15 16:21:00,015 [INFO] Received: 110 alerts, 57 jams, 0 irregularities
+2026-05-15 16:21:00,243 [INFO] Inserted 110 alerts
+2026-05-15 16:21:00,408 [INFO] Inserted 57 jams
+2026-05-15 16:21:00,410 [INFO] No irregularities to insert
+2026-05-15 16:21:00,413 [INFO] Cycle complete in 1.5s — 110 alerts, 57 jams, 0 irregularities
+2026-05-15 16:22:30,416 [INFO] Fetching Waze feed...
+2026-05-15 16:22:31,487 [INFO] Received: 103 alerts, 61 jams, 0 irregularities
+2026-05-15 16:22:31,693 [INFO] Inserted 103 alerts
+2026-05-15 16:22:31,881 [INFO] Inserted 61 jams
+2026-05-15 16:22:31,883 [INFO] No irregularities to insert
+2026-05-15 16:22:31,885 [INFO] Cycle complete in 1.47s — 103 alerts, 61 jams, 0 irregularities
+2026-05-15 16:24:01,888 [INFO] Fetching Waze feed...
+2026-05-15 16:24:02,958 [INFO] Received: 102 alerts, 58 jams, 0 irregularities
+2026-05-15 16:24:03,201 [INFO] Inserted 102 alerts
+2026-05-15 16:24:03,468 [INFO] Inserted 58 jams
+2026-05-15 16:24:03,470 [INFO] No irregularities to insert
+2026-05-15 16:24:03,472 [INFO] Cycle complete in 1.58s — 102 alerts, 58 jams, 0 irregularities
+2026-05-15 16:25:33,474 [INFO] Fetching Waze feed...
+2026-05-15 16:25:34,556 [INFO] Received: 102 alerts, 54 jams, 0 irregularities
+2026-05-15 16:25:34,749 [INFO] Inserted 102 alerts
+2026-05-15 16:25:34,883 [INFO] Inserted 54 jams
+2026-05-15 16:25:34,887 [INFO] No irregularities to insert
+2026-05-15 16:25:34,890 [INFO] Cycle complete in 1.42s — 102 alerts, 54 jams, 0 irregularities
+2026-05-15 16:27:04,892 [INFO] Fetching Waze feed...
+2026-05-15 16:27:06,015 [INFO] Received: 100 alerts, 52 jams, 0 irregularities
+2026-05-15 16:27:06,211 [INFO] Inserted 100 alerts
+2026-05-15 16:27:06,331 [INFO] Inserted 52 jams
+2026-05-15 16:27:06,334 [INFO] No irregularities to insert
+2026-05-15 16:27:06,336 [INFO] Cycle complete in 1.44s — 100 alerts, 52 jams, 0 irregularities
+2026-05-15 16:28:36,338 [INFO] Fetching Waze feed...
+2026-05-15 16:28:37,415 [INFO] Received: 99 alerts, 52 jams, 0 irregularities
+2026-05-15 16:28:37,601 [INFO] Inserted 99 alerts
+2026-05-15 16:28:37,728 [INFO] Inserted 52 jams
+2026-05-15 16:28:37,729 [INFO] No irregularities to insert
+2026-05-15 16:28:37,732 [INFO] Cycle complete in 1.39s — 99 alerts, 52 jams, 0 irregularities
+2026-05-15 16:30:07,734 [INFO] Fetching Waze feed...
+2026-05-15 16:30:08,835 [INFO] Received: 100 alerts, 55 jams, 0 irregularities
+2026-05-15 16:30:09,079 [INFO] Inserted 100 alerts
+2026-05-15 16:30:09,239 [INFO] Inserted 55 jams
+2026-05-15 16:30:09,242 [INFO] No irregularities to insert
+2026-05-15 16:30:09,244 [INFO] Cycle complete in 1.51s — 100 alerts, 55 jams, 0 irregularities
+2026-05-15 16:31:39,246 [INFO] Fetching Waze feed...
+2026-05-15 16:31:40,379 [INFO] Received: 99 alerts, 56 jams, 0 irregularities
+2026-05-15 16:31:40,582 [INFO] Inserted 99 alerts
+2026-05-15 16:31:40,719 [INFO] Inserted 56 jams
+2026-05-15 16:31:40,721 [INFO] No irregularities to insert
+2026-05-15 16:31:40,723 [INFO] Cycle complete in 1.48s — 99 alerts, 56 jams, 0 irregularities
+2026-05-15 16:33:10,725 [INFO] Fetching Waze feed...
+2026-05-15 16:33:11,934 [INFO] Received: 99 alerts, 54 jams, 0 irregularities
+2026-05-15 16:33:12,117 [INFO] Inserted 99 alerts
+2026-05-15 16:33:12,269 [INFO] Inserted 54 jams
+2026-05-15 16:33:12,270 [INFO] No irregularities to insert
+2026-05-15 16:33:12,273 [INFO] Cycle complete in 1.55s — 99 alerts, 54 jams, 0 irregularities
+2026-05-15 16:34:42,275 [INFO] Fetching Waze feed...
+2026-05-15 16:34:43,319 [INFO] Received: 98 alerts, 55 jams, 0 irregularities
+2026-05-15 16:34:43,505 [INFO] Inserted 98 alerts
+2026-05-15 16:34:43,664 [INFO] Inserted 55 jams
+2026-05-15 16:34:43,666 [INFO] No irregularities to insert
+2026-05-15 16:34:43,668 [INFO] Cycle complete in 1.39s — 98 alerts, 55 jams, 0 irregularities
+2026-05-15 16:36:13,670 [INFO] Fetching Waze feed...
+2026-05-15 16:36:14,752 [INFO] Received: 98 alerts, 53 jams, 0 irregularities
+2026-05-15 16:36:14,943 [INFO] Inserted 98 alerts
+2026-05-15 16:36:15,061 [INFO] Inserted 53 jams
+2026-05-15 16:36:15,063 [INFO] No irregularities to insert
+2026-05-15 16:36:15,065 [INFO] Cycle complete in 1.4s — 98 alerts, 53 jams, 0 irregularities
+2026-05-15 16:37:45,067 [INFO] Fetching Waze feed...
+2026-05-15 16:37:46,162 [INFO] Received: 99 alerts, 49 jams, 0 irregularities
+2026-05-15 16:37:46,352 [INFO] Inserted 99 alerts
+2026-05-15 16:37:46,474 [INFO] Inserted 49 jams
+2026-05-15 16:37:46,476 [INFO] No irregularities to insert
+2026-05-15 16:37:46,478 [INFO] Cycle complete in 1.41s — 99 alerts, 49 jams, 0 irregularities
+2026-05-15 16:39:16,480 [INFO] Fetching Waze feed...
+2026-05-15 16:39:17,617 [INFO] Received: 103 alerts, 53 jams, 0 irregularities
+2026-05-15 16:39:17,838 [INFO] Inserted 103 alerts
+2026-05-15 16:39:17,957 [INFO] Inserted 53 jams
+2026-05-15 16:39:17,959 [INFO] No irregularities to insert
+2026-05-15 16:39:17,961 [INFO] Cycle complete in 1.48s — 103 alerts, 53 jams, 0 irregularities
+2026-05-15 16:40:47,963 [INFO] Fetching Waze feed...
+2026-05-15 16:40:49,091 [INFO] Received: 103 alerts, 52 jams, 0 irregularities
+2026-05-15 16:40:49,268 [INFO] Inserted 103 alerts
+2026-05-15 16:40:49,409 [INFO] Inserted 52 jams
+2026-05-15 16:40:49,412 [INFO] No irregularities to insert
+2026-05-15 16:40:49,414 [INFO] Cycle complete in 1.45s — 103 alerts, 52 jams, 0 irregularities
+2026-05-15 16:42:19,416 [INFO] Fetching Waze feed...
+2026-05-15 16:42:20,497 [INFO] Received: 105 alerts, 49 jams, 0 irregularities
+2026-05-15 16:42:20,894 [INFO] Inserted 105 alerts
+2026-05-15 16:42:21,189 [INFO] Inserted 49 jams
+2026-05-15 16:42:21,190 [INFO] No irregularities to insert
+2026-05-15 16:42:21,192 [INFO] Cycle complete in 1.78s — 105 alerts, 49 jams, 0 irregularities
+2026-05-15 16:43:51,194 [INFO] Fetching Waze feed...
+2026-05-15 16:43:52,515 [INFO] Received: 106 alerts, 51 jams, 0 irregularities
+2026-05-15 16:43:52,757 [INFO] Inserted 106 alerts
+2026-05-15 16:43:52,897 [INFO] Inserted 51 jams
+2026-05-15 16:43:52,899 [INFO] No irregularities to insert
+2026-05-15 16:43:52,901 [INFO] Cycle complete in 1.71s — 106 alerts, 51 jams, 0 irregularities
+2026-05-15 16:45:22,904 [INFO] Fetching Waze feed...
+2026-05-15 16:45:24,043 [INFO] Received: 109 alerts, 51 jams, 0 irregularities
+2026-05-15 16:45:24,246 [INFO] Inserted 109 alerts
+2026-05-15 16:45:24,383 [INFO] Inserted 51 jams
+2026-05-15 16:45:24,386 [INFO] No irregularities to insert
+2026-05-15 16:45:24,388 [INFO] Cycle complete in 1.48s — 109 alerts, 51 jams, 0 irregularities
+2026-05-15 16:46:54,390 [INFO] Fetching Waze feed...
+2026-05-15 16:46:55,522 [INFO] Received: 112 alerts, 51 jams, 0 irregularities
+2026-05-15 16:46:55,731 [INFO] Inserted 112 alerts
+2026-05-15 16:46:55,859 [INFO] Inserted 51 jams
+2026-05-15 16:46:55,862 [INFO] No irregularities to insert
+2026-05-15 16:46:55,864 [INFO] Cycle complete in 1.47s — 112 alerts, 51 jams, 0 irregularities
+2026-05-15 16:48:25,865 [INFO] Fetching Waze feed...
+2026-05-15 16:48:27,099 [INFO] Received: 111 alerts, 52 jams, 0 irregularities
+2026-05-15 16:48:27,400 [INFO] Inserted 111 alerts
+2026-05-15 16:48:27,558 [INFO] Inserted 52 jams
+2026-05-15 16:48:27,560 [INFO] No irregularities to insert
+2026-05-15 16:48:27,562 [INFO] Cycle complete in 1.7s — 111 alerts, 52 jams, 0 irregularities
+2026-05-15 16:49:57,564 [INFO] Fetching Waze feed...
+2026-05-15 16:49:58,655 [INFO] Received: 113 alerts, 54 jams, 0 irregularities
+2026-05-15 16:49:59,140 [INFO] Inserted 113 alerts
+2026-05-15 16:49:59,285 [INFO] Inserted 54 jams
+2026-05-15 16:49:59,290 [INFO] No irregularities to insert
+2026-05-15 16:49:59,297 [INFO] Cycle complete in 1.73s — 113 alerts, 54 jams, 0 irregularities
+2026-05-15 16:51:29,309 [INFO] Fetching Waze feed...
+2026-05-15 16:51:30,464 [INFO] Received: 117 alerts, 54 jams, 0 irregularities
+2026-05-15 16:51:30,692 [INFO] Inserted 117 alerts
+2026-05-15 16:51:31,148 [INFO] Inserted 54 jams
+2026-05-15 16:51:31,172 [INFO] No irregularities to insert
+2026-05-15 16:51:31,180 [INFO] Cycle complete in 1.87s — 117 alerts, 54 jams, 0 irregularities
+2026-05-15 16:53:01,185 [INFO] Fetching Waze feed...
+2026-05-15 16:53:02,375 [INFO] Received: 117 alerts, 53 jams, 0 irregularities
+2026-05-15 16:53:02,590 [INFO] Inserted 117 alerts
+2026-05-15 16:53:02,758 [INFO] Inserted 53 jams
+2026-05-15 16:53:02,759 [INFO] No irregularities to insert
+2026-05-15 16:53:02,761 [INFO] Cycle complete in 1.58s — 117 alerts, 53 jams, 0 irregularities
+2026-05-15 16:54:32,763 [INFO] Fetching Waze feed...
+2026-05-15 16:54:33,829 [INFO] Received: 117 alerts, 56 jams, 0 irregularities
+2026-05-15 16:54:34,061 [INFO] Inserted 117 alerts
+2026-05-15 16:54:34,215 [INFO] Inserted 56 jams
+2026-05-15 16:54:34,217 [INFO] No irregularities to insert
+2026-05-15 16:54:34,219 [INFO] Cycle complete in 1.46s — 117 alerts, 56 jams, 0 irregularities
+2026-05-15 16:56:04,222 [INFO] Fetching Waze feed...
+2026-05-15 16:56:05,368 [INFO] Received: 118 alerts, 58 jams, 0 irregularities
+2026-05-15 16:56:05,575 [INFO] Inserted 118 alerts
+2026-05-15 16:56:05,721 [INFO] Inserted 58 jams
+2026-05-15 16:56:05,723 [INFO] No irregularities to insert
+2026-05-15 16:56:05,725 [INFO] Cycle complete in 1.5s — 118 alerts, 58 jams, 0 irregularities
+2026-05-15 16:57:35,727 [INFO] Fetching Waze feed...
+2026-05-15 16:57:36,875 [INFO] Received: 118 alerts, 59 jams, 0 irregularities
+2026-05-15 16:57:37,088 [INFO] Inserted 118 alerts
+2026-05-15 16:57:37,259 [INFO] Inserted 59 jams
+2026-05-15 16:57:37,260 [INFO] No irregularities to insert
+2026-05-15 16:57:37,264 [INFO] Cycle complete in 1.54s — 118 alerts, 59 jams, 0 irregularities
+2026-05-15 16:59:07,266 [INFO] Fetching Waze feed...
+2026-05-15 16:59:08,359 [INFO] Received: 119 alerts, 54 jams, 0 irregularities
+2026-05-15 16:59:08,634 [INFO] Inserted 119 alerts
+2026-05-15 16:59:08,766 [INFO] Inserted 54 jams
+2026-05-15 16:59:08,768 [INFO] No irregularities to insert
+2026-05-15 16:59:08,770 [INFO] Cycle complete in 1.5s — 119 alerts, 54 jams, 0 irregularities
+2026-05-15 17:00:38,772 [INFO] Fetching Waze feed...
+2026-05-15 17:00:39,889 [INFO] Received: 113 alerts, 50 jams, 0 irregularities
+2026-05-15 17:00:40,117 [INFO] Inserted 113 alerts
+2026-05-15 17:00:40,254 [INFO] Inserted 50 jams
+2026-05-15 17:00:40,256 [INFO] No irregularities to insert
+2026-05-15 17:00:40,258 [INFO] Cycle complete in 1.49s — 113 alerts, 50 jams, 0 irregularities
+2026-05-15 17:02:10,260 [INFO] Fetching Waze feed...
+2026-05-15 17:02:11,405 [INFO] Received: 90 alerts, 51 jams, 0 irregularities
+2026-05-15 17:02:11,590 [INFO] Inserted 90 alerts
+2026-05-15 17:02:11,724 [INFO] Inserted 51 jams
+2026-05-15 17:02:11,727 [INFO] No irregularities to insert
+2026-05-15 17:02:11,729 [INFO] Cycle complete in 1.47s — 90 alerts, 51 jams, 0 irregularities
+2026-05-15 17:03:41,731 [INFO] Fetching Waze feed...
+2026-05-15 17:03:42,874 [INFO] Received: 87 alerts, 48 jams, 0 irregularities
+2026-05-15 17:03:43,074 [INFO] Inserted 87 alerts
+2026-05-15 17:03:43,236 [INFO] Inserted 48 jams
+2026-05-15 17:03:43,239 [INFO] No irregularities to insert
+2026-05-15 17:03:43,241 [INFO] Cycle complete in 1.51s — 87 alerts, 48 jams, 0 irregularities
+2026-05-15 17:05:13,242 [INFO] Fetching Waze feed...
+2026-05-15 17:05:14,369 [INFO] Received: 85 alerts, 47 jams, 0 irregularities
+2026-05-15 17:05:14,626 [INFO] Inserted 85 alerts
+2026-05-15 17:05:14,744 [INFO] Inserted 47 jams
+2026-05-15 17:05:14,747 [INFO] No irregularities to insert
+2026-05-15 17:05:14,748 [INFO] Cycle complete in 1.51s — 85 alerts, 47 jams, 0 irregularities
+2026-05-15 17:06:44,750 [INFO] Fetching Waze feed...
+2026-05-15 17:06:45,881 [INFO] Received: 84 alerts, 50 jams, 0 irregularities
+2026-05-15 17:06:46,039 [INFO] Inserted 84 alerts
+2026-05-15 17:06:46,172 [INFO] Inserted 50 jams
+2026-05-15 17:06:46,174 [INFO] No irregularities to insert
+2026-05-15 17:06:46,176 [INFO] Cycle complete in 1.43s — 84 alerts, 50 jams, 0 irregularities
+2026-05-15 17:08:16,184 [INFO] Fetching Waze feed...
+2026-05-15 17:08:17,299 [INFO] Received: 85 alerts, 50 jams, 0 irregularities
+2026-05-15 17:08:17,502 [INFO] Inserted 85 alerts
+2026-05-15 17:08:17,644 [INFO] Inserted 50 jams
+2026-05-15 17:08:17,645 [INFO] No irregularities to insert
+2026-05-15 17:08:17,647 [INFO] Cycle complete in 1.46s — 85 alerts, 50 jams, 0 irregularities
+2026-05-15 17:09:47,649 [INFO] Fetching Waze feed...
+2026-05-15 17:09:48,764 [INFO] Received: 81 alerts, 50 jams, 0 irregularities
+2026-05-15 17:09:48,936 [INFO] Inserted 81 alerts
+2026-05-15 17:09:49,048 [INFO] Inserted 50 jams
+2026-05-15 17:09:49,050 [INFO] No irregularities to insert
+2026-05-15 17:09:49,052 [INFO] Cycle complete in 1.4s — 81 alerts, 50 jams, 0 irregularities
+2026-05-15 17:11:19,053 [INFO] Fetching Waze feed...
+2026-05-15 17:11:20,202 [INFO] Received: 83 alerts, 48 jams, 0 irregularities
+2026-05-15 17:11:20,356 [INFO] Inserted 83 alerts
+2026-05-15 17:11:20,489 [INFO] Inserted 48 jams
+2026-05-15 17:11:20,491 [INFO] No irregularities to insert
+2026-05-15 17:11:20,493 [INFO] Cycle complete in 1.44s — 83 alerts, 48 jams, 0 irregularities
+2026-05-15 17:12:50,495 [INFO] Fetching Waze feed...
+2026-05-15 17:12:51,663 [INFO] Received: 81 alerts, 47 jams, 0 irregularities
+2026-05-15 17:12:51,828 [INFO] Inserted 81 alerts
+2026-05-15 17:12:51,933 [INFO] Inserted 47 jams
+2026-05-15 17:12:51,935 [INFO] No irregularities to insert
+2026-05-15 17:12:51,937 [INFO] Cycle complete in 1.44s — 81 alerts, 47 jams, 0 irregularities
+2026-05-15 17:14:21,939 [INFO] Fetching Waze feed...
+2026-05-15 17:14:23,047 [INFO] Received: 86 alerts, 49 jams, 0 irregularities
+2026-05-15 17:14:23,213 [INFO] Inserted 86 alerts
+2026-05-15 17:14:23,338 [INFO] Inserted 49 jams
+2026-05-15 17:14:23,340 [INFO] No irregularities to insert
+2026-05-15 17:14:23,342 [INFO] Cycle complete in 1.4s — 86 alerts, 49 jams, 0 irregularities
+2026-05-15 17:15:53,344 [INFO] Fetching Waze feed...
+2026-05-15 17:15:54,511 [INFO] Received: 85 alerts, 56 jams, 0 irregularities
+2026-05-15 17:15:54,673 [INFO] Inserted 85 alerts
+2026-05-15 17:15:54,856 [INFO] Inserted 56 jams
+2026-05-15 17:15:54,858 [INFO] No irregularities to insert
+2026-05-15 17:15:54,860 [INFO] Cycle complete in 1.52s — 85 alerts, 56 jams, 0 irregularities
+2026-05-15 17:17:24,862 [INFO] Fetching Waze feed...
+2026-05-15 17:17:26,061 [INFO] Received: 85 alerts, 53 jams, 0 irregularities
+2026-05-15 17:17:26,261 [INFO] Inserted 85 alerts
+2026-05-15 17:17:26,382 [INFO] Inserted 53 jams
+2026-05-15 17:17:26,383 [INFO] No irregularities to insert
+2026-05-15 17:17:26,386 [INFO] Cycle complete in 1.52s — 85 alerts, 53 jams, 0 irregularities
+2026-05-15 17:18:56,388 [INFO] Fetching Waze feed...
+2026-05-15 17:18:57,638 [INFO] Received: 87 alerts, 55 jams, 0 irregularities
+2026-05-15 17:18:57,820 [INFO] Inserted 87 alerts
+2026-05-15 17:18:57,963 [INFO] Inserted 55 jams
+2026-05-15 17:18:57,968 [INFO] No irregularities to insert
+2026-05-15 17:18:57,970 [INFO] Cycle complete in 1.58s — 87 alerts, 55 jams, 0 irregularities
+2026-05-15 17:20:27,976 [INFO] Fetching Waze feed...
+2026-05-15 17:20:29,188 [INFO] Received: 90 alerts, 55 jams, 0 irregularities
+2026-05-15 17:20:29,379 [INFO] Inserted 90 alerts
+2026-05-15 17:20:29,543 [INFO] Inserted 55 jams
+2026-05-15 17:20:29,545 [INFO] No irregularities to insert
+2026-05-15 17:20:29,549 [INFO] Cycle complete in 1.57s — 90 alerts, 55 jams, 0 irregularities
+2026-05-15 17:21:59,552 [INFO] Fetching Waze feed...
+2026-05-15 17:22:00,863 [INFO] Received: 88 alerts, 55 jams, 0 irregularities
+2026-05-15 17:22:01,030 [INFO] Inserted 88 alerts
+2026-05-15 17:22:01,160 [INFO] Inserted 55 jams
+2026-05-15 17:22:01,161 [INFO] No irregularities to insert
+2026-05-15 17:22:01,164 [INFO] Cycle complete in 1.61s — 88 alerts, 55 jams, 0 irregularities
+2026-05-15 17:23:31,165 [INFO] Fetching Waze feed...
+2026-05-15 17:23:32,283 [INFO] Received: 90 alerts, 52 jams, 0 irregularities
+2026-05-15 17:23:32,495 [INFO] Inserted 90 alerts
+2026-05-15 17:23:32,633 [INFO] Inserted 52 jams
+2026-05-15 17:23:32,634 [INFO] No irregularities to insert
+2026-05-15 17:23:32,637 [INFO] Cycle complete in 1.47s — 90 alerts, 52 jams, 0 irregularities
+2026-05-15 17:25:02,639 [INFO] Fetching Waze feed...
+2026-05-15 17:25:03,732 [INFO] Received: 87 alerts, 50 jams, 0 irregularities
+2026-05-15 17:25:03,885 [INFO] Inserted 87 alerts
+2026-05-15 17:25:04,012 [INFO] Inserted 50 jams
+2026-05-15 17:25:04,014 [INFO] No irregularities to insert
+2026-05-15 17:25:04,016 [INFO] Cycle complete in 1.38s — 87 alerts, 50 jams, 0 irregularities
+2026-05-15 17:26:34,017 [INFO] Fetching Waze feed...
+2026-05-15 17:26:35,142 [INFO] Received: 87 alerts, 53 jams, 0 irregularities
+2026-05-15 17:26:35,311 [INFO] Inserted 87 alerts
+2026-05-15 17:26:35,462 [INFO] Inserted 53 jams
+2026-05-15 17:26:35,464 [INFO] No irregularities to insert
+2026-05-15 17:26:35,467 [INFO] Cycle complete in 1.45s — 87 alerts, 53 jams, 0 irregularities
+2026-05-15 17:28:05,468 [INFO] Fetching Waze feed...
+2026-05-15 17:28:06,631 [INFO] Received: 89 alerts, 55 jams, 0 irregularities
+2026-05-15 17:28:07,119 [INFO] Inserted 89 alerts
+2026-05-15 17:28:07,306 [INFO] Inserted 55 jams
+2026-05-15 17:28:07,308 [INFO] No irregularities to insert
+2026-05-15 17:28:07,312 [INFO] Cycle complete in 1.84s — 89 alerts, 55 jams, 0 irregularities
+2026-05-15 17:29:37,318 [INFO] Fetching Waze feed...
+2026-05-15 17:29:38,426 [INFO] Received: 90 alerts, 48 jams, 0 irregularities
+2026-05-15 17:29:38,598 [INFO] Inserted 90 alerts
+2026-05-15 17:29:38,713 [INFO] Inserted 48 jams
+2026-05-15 17:29:38,714 [INFO] No irregularities to insert
+2026-05-15 17:29:38,724 [INFO] Cycle complete in 1.41s — 90 alerts, 48 jams, 0 irregularities
+2026-05-15 17:31:08,726 [INFO] Fetching Waze feed...
+2026-05-15 17:31:09,848 [INFO] Received: 89 alerts, 48 jams, 0 irregularities
+2026-05-15 17:31:10,006 [INFO] Inserted 89 alerts
+2026-05-15 17:31:10,117 [INFO] Inserted 48 jams
+2026-05-15 17:31:10,119 [INFO] No irregularities to insert
+2026-05-15 17:31:10,121 [INFO] Cycle complete in 1.39s — 89 alerts, 48 jams, 0 irregularities
+2026-05-15 17:32:40,122 [INFO] Fetching Waze feed...
+2026-05-15 17:32:41,386 [INFO] Received: 86 alerts, 52 jams, 0 irregularities
+2026-05-15 17:32:41,554 [INFO] Inserted 86 alerts
+2026-05-15 17:32:41,701 [INFO] Inserted 52 jams
+2026-05-15 17:32:41,704 [INFO] No irregularities to insert
+2026-05-15 17:32:41,706 [INFO] Cycle complete in 1.58s — 86 alerts, 52 jams, 0 irregularities
+2026-05-15 17:34:11,708 [INFO] Fetching Waze feed...
+2026-05-15 17:34:13,233 [INFO] Received: 86 alerts, 51 jams, 0 irregularities
+2026-05-15 17:34:13,389 [INFO] Inserted 86 alerts
+2026-05-15 17:34:13,526 [INFO] Inserted 51 jams
+2026-05-15 17:34:13,530 [INFO] No irregularities to insert
+2026-05-15 17:34:13,533 [INFO] Cycle complete in 1.82s — 86 alerts, 51 jams, 0 irregularities
+2026-05-15 17:35:43,535 [INFO] Fetching Waze feed...
+2026-05-15 17:35:44,648 [INFO] Received: 86 alerts, 52 jams, 0 irregularities
+2026-05-15 17:35:44,820 [INFO] Inserted 86 alerts
+2026-05-15 17:35:44,941 [INFO] Inserted 52 jams
+2026-05-15 17:35:44,944 [INFO] No irregularities to insert
+2026-05-15 17:35:44,946 [INFO] Cycle complete in 1.41s — 86 alerts, 52 jams, 0 irregularities
+2026-05-15 17:37:14,948 [INFO] Fetching Waze feed...
+2026-05-15 17:37:16,085 [INFO] Received: 87 alerts, 51 jams, 0 irregularities
+2026-05-15 17:37:16,271 [INFO] Inserted 87 alerts
+2026-05-15 17:37:16,394 [INFO] Inserted 51 jams
+2026-05-15 17:37:16,397 [INFO] No irregularities to insert
+2026-05-15 17:37:16,400 [INFO] Cycle complete in 1.45s — 87 alerts, 51 jams, 0 irregularities
+2026-05-15 17:38:46,402 [INFO] Fetching Waze feed...
+2026-05-15 17:38:47,545 [INFO] Received: 87 alerts, 54 jams, 0 irregularities
+2026-05-15 17:38:47,750 [INFO] Inserted 87 alerts
+2026-05-15 17:38:47,919 [INFO] Inserted 54 jams
+2026-05-15 17:38:47,921 [INFO] No irregularities to insert
+2026-05-15 17:38:47,924 [INFO] Cycle complete in 1.52s — 87 alerts, 54 jams, 0 irregularities
+2026-05-15 17:40:17,926 [INFO] Fetching Waze feed...
+2026-05-15 17:40:19,063 [INFO] Received: 85 alerts, 56 jams, 0 irregularities
+2026-05-15 17:40:19,227 [INFO] Inserted 85 alerts
+2026-05-15 17:40:19,391 [INFO] Inserted 56 jams
+2026-05-15 17:40:19,393 [INFO] No irregularities to insert
+2026-05-15 17:40:19,395 [INFO] Cycle complete in 1.47s — 85 alerts, 56 jams, 0 irregularities
+2026-05-15 17:41:49,397 [INFO] Fetching Waze feed...
+2026-05-15 17:41:50,531 [INFO] Received: 84 alerts, 52 jams, 0 irregularities
+2026-05-15 17:41:50,714 [INFO] Inserted 84 alerts
+2026-05-15 17:41:50,860 [INFO] Inserted 52 jams
+2026-05-15 17:41:50,862 [INFO] No irregularities to insert
+2026-05-15 17:41:50,864 [INFO] Cycle complete in 1.47s — 84 alerts, 52 jams, 0 irregularities
+2026-05-15 17:43:20,866 [INFO] Fetching Waze feed...
+2026-05-15 17:43:22,000 [INFO] Received: 83 alerts, 49 jams, 0 irregularities
+2026-05-15 17:43:22,202 [INFO] Inserted 83 alerts
+2026-05-15 17:43:22,349 [INFO] Inserted 49 jams
+2026-05-15 17:43:22,350 [INFO] No irregularities to insert
+2026-05-15 17:43:22,352 [INFO] Cycle complete in 1.49s — 83 alerts, 49 jams, 0 irregularities
+2026-05-18 09:26:06,834 [INFO] Running single ingest cycle...
+2026-05-18 09:26:06,834 [INFO] Fetching Waze feed...
+2026-05-18 09:26:07,955 [INFO] Received: 109 alerts, 26 jams, 0 irregularities
+2026-05-18 09:26:08,560 [INFO] Inserted 109 alerts
+2026-05-18 09:26:08,743 [INFO] Inserted 26 jams
+2026-05-18 09:26:08,751 [INFO] No irregularities to insert
+2026-05-18 09:26:08,754 [INFO] Cycle complete in 1.92s — 109 alerts, 26 jams, 0 irregularities
+2026-05-18 09:26:21,508 [INFO] ============================================================
+2026-05-18 09:26:21,508 [INFO] Waze Traffic Ingest Service Starting
+2026-05-18 09:26:21,508 [INFO]   Server:   kcpssqlprod
+2026-05-18 09:26:21,509 [INFO]   Database: NWSAegisGISDB_KanawhaCo_WV
+2026-05-18 09:26:21,509 [INFO]   Interval: 90s
+2026-05-18 09:26:21,509 [INFO]   Feed URL: https://www.waze.com/partnerhub-api/partners/11564347598/waze-feeds/67b4a799-aac...
+2026-05-18 09:26:21,509 [INFO] ============================================================
+2026-05-18 09:26:21,509 [INFO] Fetching Waze feed...
+2026-05-18 09:26:22,632 [INFO] Received: 107 alerts, 26 jams, 0 irregularities
+2026-05-18 09:26:22,869 [INFO] Inserted 107 alerts
+2026-05-18 09:26:22,969 [INFO] Inserted 26 jams
+2026-05-18 09:26:22,974 [INFO] No irregularities to insert
+2026-05-18 09:26:22,976 [INFO] Cycle complete in 1.47s — 107 alerts, 26 jams, 0 irregularities
+2026-05-18 09:27:52,977 [INFO] Fetching Waze feed...
+2026-05-18 09:27:54,038 [INFO] Received: 107 alerts, 26 jams, 0 irregularities
+2026-05-18 09:27:54,244 [INFO] Inserted 107 alerts
+2026-05-18 09:27:54,325 [INFO] Inserted 26 jams
+2026-05-18 09:27:54,327 [INFO] No irregularities to insert
+2026-05-18 09:27:54,331 [INFO] Cycle complete in 1.35s — 107 alerts, 26 jams, 0 irregularities
+2026-05-18 09:29:24,333 [INFO] Fetching Waze feed...
+2026-05-18 09:29:25,395 [INFO] Received: 101 alerts, 30 jams, 0 irregularities
+2026-05-18 09:29:25,557 [INFO] Inserted 101 alerts
+2026-05-18 09:29:25,648 [INFO] Inserted 30 jams
+2026-05-18 09:29:25,650 [INFO] No irregularities to insert
+2026-05-18 09:29:25,652 [INFO] Cycle complete in 1.32s — 101 alerts, 30 jams, 0 irregularities
+2026-05-18 09:30:55,654 [INFO] Fetching Waze feed...
+2026-05-18 09:30:56,712 [INFO] Received: 102 alerts, 28 jams, 0 irregularities
+2026-05-18 09:30:56,920 [INFO] Inserted 102 alerts
+2026-05-18 09:30:56,999 [INFO] Inserted 28 jams
+2026-05-18 09:30:57,000 [INFO] No irregularities to insert
+2026-05-18 09:30:57,002 [INFO] Cycle complete in 1.35s — 102 alerts, 28 jams, 0 irregularities
+2026-05-18 09:32:27,004 [INFO] Fetching Waze feed...
+2026-05-18 09:32:28,094 [INFO] Received: 99 alerts, 26 jams, 0 irregularities
+2026-05-18 09:32:28,304 [INFO] Inserted 99 alerts
+2026-05-18 09:32:28,397 [INFO] Inserted 26 jams
+2026-05-18 09:32:28,399 [INFO] No irregularities to insert
+2026-05-18 09:32:28,403 [INFO] Cycle complete in 1.4s — 99 alerts, 26 jams, 0 irregularities
+2026-05-18 09:33:58,404 [INFO] Fetching Waze feed...
+2026-05-18 09:33:59,454 [INFO] Received: 101 alerts, 28 jams, 0 irregularities
+2026-05-18 09:33:59,648 [INFO] Inserted 101 alerts
+2026-05-18 09:33:59,785 [INFO] Inserted 28 jams
+2026-05-18 09:33:59,786 [INFO] No irregularities to insert
+2026-05-18 09:33:59,789 [INFO] Cycle complete in 1.38s — 101 alerts, 28 jams, 0 irregularities
+2026-05-18 09:35:29,790 [INFO] Fetching Waze feed...
+2026-05-18 09:35:30,874 [INFO] Received: 101 alerts, 31 jams, 0 irregularities
+2026-05-18 09:35:31,085 [INFO] Inserted 101 alerts
+2026-05-18 09:35:31,203 [INFO] Inserted 31 jams
+2026-05-18 09:35:31,205 [INFO] No irregularities to insert
+2026-05-18 09:35:31,207 [INFO] Cycle complete in 1.42s — 101 alerts, 31 jams, 0 irregularities
+2026-05-18 09:37:01,209 [INFO] Fetching Waze feed...
+2026-05-18 09:37:02,252 [INFO] Received: 101 alerts, 27 jams, 0 irregularities
+2026-05-18 09:37:02,444 [INFO] Inserted 101 alerts
+2026-05-18 09:37:02,522 [INFO] Inserted 27 jams
+2026-05-18 09:37:02,524 [INFO] No irregularities to insert
+2026-05-18 09:37:02,526 [INFO] Cycle complete in 1.32s — 101 alerts, 27 jams, 0 irregularities
+2026-05-18 09:38:32,528 [INFO] Fetching Waze feed...
+2026-05-18 09:38:33,905 [INFO] Received: 96 alerts, 26 jams, 0 irregularities
+2026-05-18 09:38:34,083 [INFO] Inserted 96 alerts
+2026-05-18 09:38:34,176 [INFO] Inserted 26 jams
+2026-05-18 09:38:34,178 [INFO] No irregularities to insert
+2026-05-18 09:38:34,180 [INFO] Cycle complete in 1.65s — 96 alerts, 26 jams, 0 irregularities
+2026-05-18 09:40:04,181 [INFO] Fetching Waze feed...
+2026-05-18 09:40:05,238 [INFO] Received: 96 alerts, 30 jams, 0 irregularities
+2026-05-18 09:40:05,421 [INFO] Inserted 96 alerts
+2026-05-18 09:40:05,511 [INFO] Inserted 30 jams
+2026-05-18 09:40:05,514 [INFO] No irregularities to insert
+2026-05-18 09:40:05,516 [INFO] Cycle complete in 1.33s — 96 alerts, 30 jams, 0 irregularities
+2026-05-18 09:41:35,517 [INFO] Fetching Waze feed...
+2026-05-18 09:41:36,538 [INFO] Received: 96 alerts, 28 jams, 0 irregularities
+2026-05-18 09:41:36,716 [INFO] Inserted 96 alerts
+2026-05-18 09:41:36,813 [INFO] Inserted 28 jams
+2026-05-18 09:41:36,815 [INFO] No irregularities to insert
+2026-05-18 09:41:36,817 [INFO] Cycle complete in 1.3s — 96 alerts, 28 jams, 0 irregularities
+2026-05-18 09:43:06,818 [INFO] Fetching Waze feed...
+2026-05-18 09:43:07,876 [INFO] Received: 95 alerts, 30 jams, 0 irregularities
+2026-05-18 09:43:08,018 [INFO] Inserted 95 alerts
+2026-05-18 09:43:08,098 [INFO] Inserted 30 jams
+2026-05-18 09:43:08,100 [INFO] No irregularities to insert
+2026-05-18 09:43:08,103 [INFO] Cycle complete in 1.28s — 95 alerts, 30 jams, 0 irregularities
+2026-05-18 09:44:38,107 [INFO] Fetching Waze feed...
+2026-05-18 09:44:39,320 [INFO] Received: 94 alerts, 30 jams, 0 irregularities
+2026-05-18 09:44:39,547 [INFO] Inserted 94 alerts
+2026-05-18 09:44:39,650 [INFO] Inserted 30 jams
+2026-05-18 09:44:39,652 [INFO] No irregularities to insert
+2026-05-18 09:44:39,654 [INFO] Cycle complete in 1.55s — 94 alerts, 30 jams, 0 irregularities
+2026-05-18 09:46:09,655 [INFO] Fetching Waze feed...
+2026-05-18 09:46:10,738 [INFO] Received: 95 alerts, 27 jams, 0 irregularities
+2026-05-18 09:46:10,888 [INFO] Inserted 95 alerts
+2026-05-18 09:46:10,968 [INFO] Inserted 27 jams
+2026-05-18 09:46:10,969 [INFO] No irregularities to insert
+2026-05-18 09:46:10,971 [INFO] Cycle complete in 1.32s — 95 alerts, 27 jams, 0 irregularities
+2026-05-18 09:47:40,974 [INFO] Fetching Waze feed...
+2026-05-18 09:47:42,011 [INFO] Received: 96 alerts, 26 jams, 0 irregularities
+2026-05-18 09:47:42,243 [INFO] Inserted 96 alerts
+2026-05-18 09:47:42,316 [INFO] Inserted 26 jams
+2026-05-18 09:47:42,317 [INFO] No irregularities to insert
+2026-05-18 09:47:42,320 [INFO] Cycle complete in 1.35s — 96 alerts, 26 jams, 0 irregularities
+2026-05-18 09:49:12,324 [INFO] Fetching Waze feed...
+2026-05-18 09:49:13,380 [INFO] Received: 95 alerts, 28 jams, 0 irregularities
+2026-05-18 09:49:13,576 [INFO] Inserted 95 alerts
+2026-05-18 09:49:13,662 [INFO] Inserted 28 jams
+2026-05-18 09:49:13,663 [INFO] No irregularities to insert
+2026-05-18 09:49:13,665 [INFO] Cycle complete in 1.34s — 95 alerts, 28 jams, 0 irregularities
+2026-05-18 09:50:43,669 [INFO] Fetching Waze feed...
+2026-05-18 09:50:44,731 [INFO] Received: 95 alerts, 30 jams, 0 irregularities
+2026-05-18 09:50:44,961 [INFO] Inserted 95 alerts
+2026-05-18 09:50:45,048 [INFO] Inserted 30 jams
+2026-05-18 09:50:45,050 [INFO] No irregularities to insert
+2026-05-18 09:50:45,052 [INFO] Cycle complete in 1.38s — 95 alerts, 30 jams, 0 irregularities
+2026-05-18 09:52:15,055 [INFO] Fetching Waze feed...
+2026-05-18 09:52:16,088 [INFO] Received: 99 alerts, 29 jams, 0 irregularities
+2026-05-18 09:52:16,765 [INFO] Inserted 99 alerts
+2026-05-18 09:52:17,031 [INFO] Inserted 29 jams
+2026-05-18 09:52:17,033 [INFO] No irregularities to insert
+2026-05-18 09:52:17,035 [INFO] Cycle complete in 1.98s — 99 alerts, 29 jams, 0 irregularities
+2026-05-18 09:53:47,038 [INFO] Fetching Waze feed...
+2026-05-18 09:53:48,076 [INFO] Received: 94 alerts, 30 jams, 0 irregularities
+2026-05-18 09:53:48,254 [INFO] Inserted 94 alerts
+2026-05-18 09:53:48,342 [INFO] Inserted 30 jams
+2026-05-18 09:53:48,343 [INFO] No irregularities to insert
+2026-05-18 09:53:48,346 [INFO] Cycle complete in 1.31s — 94 alerts, 30 jams, 0 irregularities
+2026-05-18 09:55:18,349 [INFO] Fetching Waze feed...
+2026-05-18 09:55:19,386 [INFO] Received: 95 alerts, 30 jams, 0 irregularities
+2026-05-18 09:55:19,576 [INFO] Inserted 95 alerts
+2026-05-18 09:55:19,686 [INFO] Inserted 30 jams
+2026-05-18 09:55:19,688 [INFO] No irregularities to insert
+2026-05-18 09:55:19,690 [INFO] Cycle complete in 1.34s — 95 alerts, 30 jams, 0 irregularities
+2026-05-18 09:56:49,693 [INFO] Fetching Waze feed...
+2026-05-18 09:56:50,763 [INFO] Received: 96 alerts, 31 jams, 0 irregularities
+2026-05-18 09:56:50,955 [INFO] Inserted 96 alerts
+2026-05-18 09:56:51,040 [INFO] Inserted 31 jams
+2026-05-18 09:56:51,041 [INFO] No irregularities to insert
+2026-05-18 09:56:51,043 [INFO] Cycle complete in 1.35s — 96 alerts, 31 jams, 0 irregularities
+2026-05-18 09:58:21,047 [INFO] Fetching Waze feed...
+2026-05-18 09:58:22,090 [INFO] Received: 94 alerts, 30 jams, 0 irregularities
+2026-05-18 09:58:22,250 [INFO] Inserted 94 alerts
+2026-05-18 09:58:22,349 [INFO] Inserted 30 jams
+2026-05-18 09:58:22,351 [INFO] No irregularities to insert
+2026-05-18 09:58:22,353 [INFO] Cycle complete in 1.31s — 94 alerts, 30 jams, 0 irregularities
+2026-05-18 09:59:52,358 [INFO] Fetching Waze feed...
+2026-05-18 09:59:53,385 [INFO] Received: 95 alerts, 28 jams, 0 irregularities
+2026-05-18 09:59:53,567 [INFO] Inserted 95 alerts
+2026-05-18 09:59:53,651 [INFO] Inserted 28 jams
+2026-05-18 09:59:53,653 [INFO] No irregularities to insert
+2026-05-18 09:59:53,673 [INFO] Cycle complete in 1.32s — 95 alerts, 28 jams, 0 irregularities
+2026-05-18 10:01:23,676 [INFO] Fetching Waze feed...
+2026-05-18 10:01:24,707 [INFO] Received: 95 alerts, 29 jams, 0 irregularities
+2026-05-18 10:01:24,899 [INFO] Inserted 95 alerts
+2026-05-18 10:01:24,986 [INFO] Inserted 29 jams
+2026-05-18 10:01:24,988 [INFO] No irregularities to insert
+2026-05-18 10:01:24,990 [INFO] Cycle complete in 1.31s — 95 alerts, 29 jams, 0 irregularities
+2026-05-18 10:02:54,994 [INFO] Fetching Waze feed...
+2026-05-18 10:02:56,061 [INFO] Received: 96 alerts, 29 jams, 0 irregularities
+2026-05-18 10:02:56,286 [INFO] Inserted 96 alerts
+2026-05-18 10:02:56,366 [INFO] Inserted 29 jams
+2026-05-18 10:02:56,368 [INFO] No irregularities to insert
+2026-05-18 10:02:56,369 [INFO] Cycle complete in 1.38s — 96 alerts, 29 jams, 0 irregularities
+2026-05-18 10:04:26,372 [INFO] Fetching Waze feed...
+2026-05-18 10:04:27,419 [INFO] Received: 97 alerts, 28 jams, 0 irregularities
+2026-05-18 10:04:27,619 [INFO] Inserted 97 alerts
+2026-05-18 10:04:27,695 [INFO] Inserted 28 jams
+2026-05-18 10:04:27,696 [INFO] No irregularities to insert
+2026-05-18 10:04:27,698 [INFO] Cycle complete in 1.33s — 97 alerts, 28 jams, 0 irregularities
+2026-05-18 10:05:57,701 [INFO] Fetching Waze feed...
+2026-05-18 10:05:58,768 [INFO] Received: 97 alerts, 27 jams, 0 irregularities
+2026-05-18 10:05:58,915 [INFO] Inserted 97 alerts
+2026-05-18 10:05:58,980 [INFO] Inserted 27 jams
+2026-05-18 10:05:58,981 [INFO] No irregularities to insert
+2026-05-18 10:05:58,983 [INFO] Cycle complete in 1.28s — 97 alerts, 27 jams, 0 irregularities
+2026-05-18 10:07:28,987 [INFO] Fetching Waze feed...
+2026-05-18 10:07:30,052 [INFO] Received: 102 alerts, 27 jams, 0 irregularities
+2026-05-18 10:07:30,243 [INFO] Inserted 102 alerts
+2026-05-18 10:07:30,307 [INFO] Inserted 27 jams
+2026-05-18 10:07:30,309 [INFO] No irregularities to insert
+2026-05-18 10:07:30,310 [INFO] Cycle complete in 1.32s — 102 alerts, 27 jams, 0 irregularities
+2026-05-18 10:09:00,313 [INFO] Fetching Waze feed...
+2026-05-18 10:09:01,383 [INFO] Received: 103 alerts, 29 jams, 0 irregularities
+2026-05-18 10:09:01,560 [INFO] Inserted 103 alerts
+2026-05-18 10:09:01,642 [INFO] Inserted 29 jams
+2026-05-18 10:09:01,644 [INFO] No irregularities to insert
+2026-05-18 10:09:01,645 [INFO] Cycle complete in 1.33s — 103 alerts, 29 jams, 0 irregularities
+2026-05-18 10:10:31,649 [INFO] Fetching Waze feed...
+2026-05-18 10:10:32,689 [INFO] Received: 106 alerts, 28 jams, 0 irregularities
+2026-05-18 10:10:32,914 [INFO] Inserted 106 alerts
+2026-05-18 10:10:32,987 [INFO] Inserted 28 jams
+2026-05-18 10:10:32,989 [INFO] No irregularities to insert
+2026-05-18 10:10:32,991 [INFO] Cycle complete in 1.34s — 106 alerts, 28 jams, 0 irregularities
+2026-05-18 10:12:02,994 [INFO] Fetching Waze feed...
+2026-05-18 10:12:04,035 [INFO] Received: 108 alerts, 26 jams, 0 irregularities
+2026-05-18 10:12:04,222 [INFO] Inserted 108 alerts
+2026-05-18 10:12:04,284 [INFO] Inserted 26 jams
+2026-05-18 10:12:04,285 [INFO] No irregularities to insert
+2026-05-18 10:12:04,287 [INFO] Cycle complete in 1.29s — 108 alerts, 26 jams, 0 irregularities
+2026-05-18 10:13:34,290 [INFO] Fetching Waze feed...
+2026-05-18 10:13:35,404 [INFO] Received: 106 alerts, 28 jams, 0 irregularities
+2026-05-18 10:13:35,627 [INFO] Inserted 106 alerts
+2026-05-18 10:13:35,735 [INFO] Inserted 28 jams
+2026-05-18 10:13:35,737 [INFO] No irregularities to insert
+2026-05-18 10:13:35,740 [INFO] Cycle complete in 1.45s — 106 alerts, 28 jams, 0 irregularities
+2026-05-18 10:15:05,743 [INFO] Fetching Waze feed...
+2026-05-18 10:15:06,893 [INFO] Received: 108 alerts, 26 jams, 0 irregularities
+2026-05-18 10:15:07,146 [INFO] Inserted 108 alerts
+2026-05-18 10:15:07,214 [INFO] Inserted 26 jams
+2026-05-18 10:15:07,216 [INFO] No irregularities to insert
+2026-05-18 10:15:07,218 [INFO] Cycle complete in 1.48s — 108 alerts, 26 jams, 0 irregularities
+2026-05-18 10:16:37,221 [INFO] Fetching Waze feed...
+2026-05-18 10:16:38,256 [INFO] Received: 111 alerts, 29 jams, 0 irregularities
+2026-05-18 10:16:38,480 [INFO] Inserted 111 alerts
+2026-05-18 10:16:38,561 [INFO] Inserted 29 jams
+2026-05-18 10:16:38,562 [INFO] No irregularities to insert
+2026-05-18 10:16:38,564 [INFO] Cycle complete in 1.34s — 111 alerts, 29 jams, 0 irregularities
+2026-05-18 10:18:08,570 [INFO] Fetching Waze feed...
+2026-05-18 10:18:09,619 [INFO] Received: 113 alerts, 29 jams, 0 irregularities
+2026-05-18 10:18:09,843 [INFO] Inserted 113 alerts
+2026-05-18 10:18:09,965 [INFO] Inserted 29 jams
+2026-05-18 10:18:09,967 [INFO] No irregularities to insert
+2026-05-18 10:18:09,969 [INFO] Cycle complete in 1.4s — 113 alerts, 29 jams, 0 irregularities
+2026-05-18 10:19:39,971 [INFO] Fetching Waze feed...
+2026-05-18 10:19:41,046 [INFO] Received: 113 alerts, 31 jams, 0 irregularities
+2026-05-18 10:19:41,251 [INFO] Inserted 113 alerts
+2026-05-18 10:19:41,381 [INFO] Inserted 31 jams
+2026-05-18 10:19:41,383 [INFO] No irregularities to insert
+2026-05-18 10:19:41,385 [INFO] Cycle complete in 1.41s — 113 alerts, 31 jams, 0 irregularities
+2026-05-18 10:21:11,387 [INFO] Fetching Waze feed...
+2026-05-18 10:21:12,470 [INFO] Received: 112 alerts, 31 jams, 0 irregularities
+2026-05-18 10:21:12,662 [INFO] Inserted 112 alerts
+2026-05-18 10:21:12,756 [INFO] Inserted 31 jams
+2026-05-18 10:21:12,758 [INFO] No irregularities to insert
+2026-05-18 10:21:12,760 [INFO] Cycle complete in 1.37s — 112 alerts, 31 jams, 0 irregularities
+2026-05-18 10:22:42,763 [INFO] Fetching Waze feed...
+2026-05-18 10:22:43,825 [INFO] Received: 109 alerts, 32 jams, 0 irregularities
+2026-05-18 10:22:44,072 [INFO] Inserted 109 alerts
+2026-05-18 10:22:44,159 [INFO] Inserted 32 jams
+2026-05-18 10:22:44,161 [INFO] No irregularities to insert
+2026-05-18 10:22:44,162 [INFO] Cycle complete in 1.4s — 109 alerts, 32 jams, 0 irregularities
+2026-05-18 10:24:14,165 [INFO] Fetching Waze feed...
+2026-05-18 10:24:15,224 [INFO] Received: 109 alerts, 35 jams, 0 irregularities
+2026-05-18 10:24:15,409 [INFO] Inserted 109 alerts
+2026-05-18 10:24:15,536 [INFO] Inserted 35 jams
+2026-05-18 10:24:15,538 [INFO] No irregularities to insert
+2026-05-18 10:24:15,540 [INFO] Cycle complete in 1.37s — 109 alerts, 35 jams, 0 irregularities
+2026-05-18 10:25:45,543 [INFO] Fetching Waze feed...
+2026-05-18 10:25:46,595 [INFO] Received: 106 alerts, 35 jams, 0 irregularities
+2026-05-18 10:25:46,835 [INFO] Inserted 106 alerts
+2026-05-18 10:25:46,925 [INFO] Inserted 35 jams
+2026-05-18 10:25:46,927 [INFO] No irregularities to insert
+2026-05-18 10:25:46,929 [INFO] Cycle complete in 1.39s — 106 alerts, 35 jams, 0 irregularities
+2026-05-18 10:35:22,477 [INFO] Fetching Waze feed...
+2026-05-18 10:35:23,584 [INFO] Received: 117 alerts, 29 jams, 0 irregularities
+2026-05-18 10:35:23,885 [INFO] Inserted 117 alerts
+2026-05-18 10:35:23,973 [INFO] Inserted 29 jams
+2026-05-18 10:35:23,975 [INFO] No irregularities to insert
+2026-05-18 10:35:23,977 [INFO] Cycle complete in 1.5s — 117 alerts, 29 jams, 0 irregularities
+2026-05-18 10:36:53,993 [INFO] Fetching Waze feed...
+2026-05-18 10:36:55,038 [INFO] Received: 119 alerts, 30 jams, 0 irregularities
+2026-05-18 10:36:55,264 [INFO] Inserted 119 alerts
+2026-05-18 10:36:55,348 [INFO] Inserted 30 jams
+2026-05-18 10:36:55,350 [INFO] No irregularities to insert
+2026-05-18 10:36:55,352 [INFO] Cycle complete in 1.36s — 119 alerts, 30 jams, 0 irregularities
+2026-05-18 10:38:25,356 [INFO] Fetching Waze feed...
+2026-05-18 10:38:26,346 [INFO] Received: 115 alerts, 32 jams, 0 irregularities
+2026-05-18 10:38:26,573 [INFO] Inserted 115 alerts
+2026-05-18 10:38:26,683 [INFO] Inserted 32 jams
+2026-05-18 10:38:26,685 [INFO] No irregularities to insert
+2026-05-18 10:38:26,687 [INFO] Cycle complete in 1.33s — 115 alerts, 32 jams, 0 irregularities
+2026-05-18 10:39:56,691 [INFO] Fetching Waze feed...
+2026-05-18 10:39:57,720 [INFO] Received: 115 alerts, 30 jams, 0 irregularities
+2026-05-18 10:39:57,940 [INFO] Inserted 115 alerts
+2026-05-18 10:39:58,021 [INFO] Inserted 30 jams
+2026-05-18 10:39:58,023 [INFO] No irregularities to insert
+2026-05-18 10:39:58,025 [INFO] Cycle complete in 1.33s — 115 alerts, 30 jams, 0 irregularities
+2026-05-18 10:41:28,040 [INFO] Fetching Waze feed...
+2026-05-18 10:41:29,085 [INFO] Received: 114 alerts, 30 jams, 0 irregularities
+2026-05-18 10:41:29,308 [INFO] Inserted 114 alerts
+2026-05-18 10:41:29,405 [INFO] Inserted 30 jams
+2026-05-18 10:41:29,408 [INFO] No irregularities to insert
+2026-05-18 10:41:29,411 [INFO] Cycle complete in 1.37s — 114 alerts, 30 jams, 0 irregularities
+2026-05-18 10:42:59,424 [INFO] Fetching Waze feed...
+2026-05-18 10:43:00,436 [INFO] Received: 119 alerts, 32 jams, 0 irregularities
+2026-05-18 10:43:00,653 [INFO] Inserted 119 alerts
+2026-05-18 10:43:00,752 [INFO] Inserted 32 jams
+2026-05-18 10:43:00,754 [INFO] No irregularities to insert
+2026-05-18 10:43:00,756 [INFO] Cycle complete in 1.33s — 119 alerts, 32 jams, 0 irregularities
+2026-05-18 10:44:30,767 [INFO] Fetching Waze feed...
+2026-05-18 10:44:31,817 [INFO] Received: 117 alerts, 27 jams, 0 irregularities
+2026-05-18 10:44:32,056 [INFO] Inserted 117 alerts
+2026-05-18 10:44:32,144 [INFO] Inserted 27 jams
+2026-05-18 10:44:32,145 [INFO] No irregularities to insert
+2026-05-18 10:44:32,147 [INFO] Cycle complete in 1.38s — 117 alerts, 27 jams, 0 irregularities
+2026-05-18 10:46:02,149 [INFO] Fetching Waze feed...
+2026-05-18 10:46:03,131 [INFO] Received: 118 alerts, 30 jams, 0 irregularities
+2026-05-18 10:46:03,343 [INFO] Inserted 118 alerts
+2026-05-18 10:46:03,445 [INFO] Inserted 30 jams
+2026-05-18 10:46:03,449 [INFO] No irregularities to insert
+2026-05-18 10:46:03,452 [INFO] Cycle complete in 1.3s — 118 alerts, 30 jams, 0 irregularities
+2026-05-18 10:47:33,469 [INFO] Fetching Waze feed...
+2026-05-18 10:47:34,507 [INFO] Received: 118 alerts, 28 jams, 0 irregularities
+2026-05-18 10:47:34,721 [INFO] Inserted 118 alerts
+2026-05-18 10:47:34,786 [INFO] Inserted 28 jams
+2026-05-18 10:47:34,788 [INFO] No irregularities to insert
+2026-05-18 10:47:34,789 [INFO] Cycle complete in 1.32s — 118 alerts, 28 jams, 0 irregularities
+2026-05-18 10:49:04,791 [INFO] Fetching Waze feed...
+2026-05-18 10:49:05,867 [INFO] Received: 118 alerts, 28 jams, 0 irregularities
+2026-05-18 10:49:06,123 [INFO] Inserted 118 alerts
+2026-05-18 10:49:06,205 [INFO] Inserted 28 jams
+2026-05-18 10:49:06,207 [INFO] No irregularities to insert
+2026-05-18 10:49:06,209 [INFO] Cycle complete in 1.42s — 118 alerts, 28 jams, 0 irregularities
+2026-05-18 10:50:36,221 [INFO] Fetching Waze feed...
+2026-05-18 10:50:37,416 [INFO] Received: 121 alerts, 28 jams, 0 irregularities
+2026-05-18 10:50:37,666 [INFO] Inserted 121 alerts
+2026-05-18 10:50:37,759 [INFO] Inserted 28 jams
+2026-05-18 10:50:37,761 [INFO] No irregularities to insert
+2026-05-18 10:50:37,765 [INFO] Cycle complete in 1.54s — 121 alerts, 28 jams, 0 irregularities
+2026-05-18 10:52:07,770 [INFO] Fetching Waze feed...
+2026-05-18 10:52:08,808 [INFO] Received: 124 alerts, 30 jams, 0 irregularities
+2026-05-18 10:52:09,079 [INFO] Inserted 124 alerts
+2026-05-18 10:52:09,169 [INFO] Inserted 30 jams
+2026-05-18 10:52:09,172 [INFO] No irregularities to insert
+2026-05-18 10:52:09,174 [INFO] Cycle complete in 1.4s — 124 alerts, 30 jams, 0 irregularities
+2026-05-18 10:53:39,190 [INFO] Fetching Waze feed...
+2026-05-18 10:53:40,244 [INFO] Received: 121 alerts, 33 jams, 0 irregularities
+2026-05-18 10:53:40,428 [INFO] Inserted 121 alerts
+2026-05-18 10:53:40,534 [INFO] Inserted 33 jams
+2026-05-18 10:53:40,535 [INFO] No irregularities to insert
+2026-05-18 10:53:40,540 [INFO] Cycle complete in 1.35s — 121 alerts, 33 jams, 0 irregularities
+2026-05-18 10:55:10,553 [INFO] Fetching Waze feed...
+2026-05-18 10:55:11,619 [INFO] Received: 122 alerts, 38 jams, 0 irregularities
+2026-05-18 10:55:11,860 [INFO] Inserted 122 alerts
+2026-05-18 10:55:11,995 [INFO] Inserted 38 jams
+2026-05-18 10:55:11,997 [INFO] No irregularities to insert
+2026-05-18 10:55:12,000 [INFO] Cycle complete in 1.45s — 122 alerts, 38 jams, 0 irregularities
+2026-05-18 10:56:42,007 [INFO] Fetching Waze feed...
+2026-05-18 10:56:43,011 [INFO] Received: 122 alerts, 36 jams, 0 irregularities
+2026-05-18 10:56:43,255 [INFO] Inserted 122 alerts
+2026-05-18 10:56:43,364 [INFO] Inserted 36 jams
+2026-05-18 10:56:43,367 [INFO] No irregularities to insert
+2026-05-18 10:56:43,370 [INFO] Cycle complete in 1.36s — 122 alerts, 36 jams, 0 irregularities
+2026-05-18 10:58:13,384 [INFO] Fetching Waze feed...
+2026-05-18 10:58:14,432 [INFO] Received: 120 alerts, 33 jams, 0 irregularities
+2026-05-18 10:58:14,653 [INFO] Inserted 120 alerts
+2026-05-18 10:58:14,746 [INFO] Inserted 33 jams
+2026-05-18 10:58:14,748 [INFO] No irregularities to insert
+2026-05-18 10:58:14,750 [INFO] Cycle complete in 1.37s — 120 alerts, 33 jams, 0 irregularities
+2026-05-18 10:59:44,761 [INFO] Fetching Waze feed...
+2026-05-18 10:59:45,814 [INFO] Received: 118 alerts, 35 jams, 0 irregularities
+2026-05-18 10:59:46,071 [INFO] Inserted 118 alerts
+2026-05-18 10:59:46,204 [INFO] Inserted 35 jams
+2026-05-18 10:59:46,207 [INFO] No irregularities to insert
+2026-05-18 10:59:46,210 [INFO] Cycle complete in 1.45s — 118 alerts, 35 jams, 0 irregularities
+2026-05-18 11:01:16,217 [INFO] Fetching Waze feed...
+2026-05-18 11:01:17,214 [INFO] Received: 117 alerts, 35 jams, 0 irregularities
+2026-05-18 11:01:17,442 [INFO] Inserted 117 alerts
+2026-05-18 11:01:17,548 [INFO] Inserted 35 jams
+2026-05-18 11:01:17,551 [INFO] No irregularities to insert
+2026-05-18 11:01:17,552 [INFO] Cycle complete in 1.34s — 117 alerts, 35 jams, 0 irregularities
+2026-05-18 11:02:47,568 [INFO] Fetching Waze feed...
+2026-05-18 11:02:48,640 [INFO] Received: 114 alerts, 34 jams, 0 irregularities
+2026-05-18 11:02:48,883 [INFO] Inserted 114 alerts
+2026-05-18 11:02:49,010 [INFO] Inserted 34 jams
+2026-05-18 11:02:49,012 [INFO] No irregularities to insert
+2026-05-18 11:02:49,014 [INFO] Cycle complete in 1.45s — 114 alerts, 34 jams, 0 irregularities
+2026-05-18 11:04:19,016 [INFO] Fetching Waze feed...
+2026-05-18 11:04:20,037 [INFO] Received: 115 alerts, 33 jams, 0 irregularities
+2026-05-18 11:04:20,268 [INFO] Inserted 115 alerts
+2026-05-18 11:04:20,353 [INFO] Inserted 33 jams
+2026-05-18 11:04:20,355 [INFO] No irregularities to insert
+2026-05-18 11:04:20,357 [INFO] Cycle complete in 1.34s — 115 alerts, 33 jams, 0 irregularities
+2026-05-18 11:05:50,366 [INFO] Fetching Waze feed...
+2026-05-18 11:05:51,485 [INFO] Received: 112 alerts, 29 jams, 0 irregularities
+2026-05-18 11:05:51,713 [INFO] Inserted 112 alerts
+2026-05-18 11:05:51,808 [INFO] Inserted 29 jams
+2026-05-18 11:05:51,810 [INFO] No irregularities to insert
+2026-05-18 11:05:51,814 [INFO] Cycle complete in 1.45s — 112 alerts, 29 jams, 0 irregularities
+2026-05-18 11:07:21,822 [INFO] Fetching Waze feed...
+2026-05-18 11:07:22,878 [INFO] Received: 113 alerts, 30 jams, 0 irregularities
+2026-05-18 11:07:23,088 [INFO] Inserted 113 alerts
+2026-05-18 11:07:23,179 [INFO] Inserted 30 jams
+2026-05-18 11:07:23,181 [INFO] No irregularities to insert
+2026-05-18 11:07:23,183 [INFO] Cycle complete in 1.36s — 113 alerts, 30 jams, 0 irregularities
+2026-05-18 11:08:53,185 [INFO] Fetching Waze feed...
+2026-05-18 11:08:54,245 [INFO] Received: 115 alerts, 30 jams, 0 irregularities
+2026-05-18 11:08:54,446 [INFO] Inserted 115 alerts
+2026-05-18 11:08:54,529 [INFO] Inserted 30 jams
+2026-05-18 11:08:54,531 [INFO] No irregularities to insert
+2026-05-18 11:08:54,533 [INFO] Cycle complete in 1.35s — 115 alerts, 30 jams, 0 irregularities
+2026-05-18 11:10:24,538 [INFO] Fetching Waze feed...
+2026-05-18 11:10:25,676 [INFO] Received: 113 alerts, 29 jams, 0 irregularities
+2026-05-18 11:10:25,881 [INFO] Inserted 113 alerts
+2026-05-18 11:10:25,957 [INFO] Inserted 29 jams
+2026-05-18 11:10:25,959 [INFO] No irregularities to insert
+2026-05-18 11:10:25,962 [INFO] Cycle complete in 1.42s — 113 alerts, 29 jams, 0 irregularities
+2026-05-18 11:11:55,966 [INFO] Fetching Waze feed...
+2026-05-18 11:11:57,103 [INFO] Received: 115 alerts, 31 jams, 0 irregularities
+2026-05-18 11:11:57,321 [INFO] Inserted 115 alerts
+2026-05-18 11:11:57,408 [INFO] Inserted 31 jams
+2026-05-18 11:11:57,410 [INFO] No irregularities to insert
+2026-05-18 11:11:57,412 [INFO] Cycle complete in 1.45s — 115 alerts, 31 jams, 0 irregularities
+2026-05-18 11:13:27,428 [INFO] Fetching Waze feed...
+2026-05-18 11:13:28,455 [INFO] Received: 115 alerts, 30 jams, 0 irregularities
+2026-05-18 11:13:28,628 [INFO] Inserted 115 alerts
+2026-05-18 11:13:28,705 [INFO] Inserted 30 jams
+2026-05-18 11:13:28,707 [INFO] No irregularities to insert
+2026-05-18 11:13:28,709 [INFO] Cycle complete in 1.28s — 115 alerts, 30 jams, 0 irregularities
+2026-05-18 11:14:58,724 [INFO] Fetching Waze feed...
+2026-05-18 11:15:00,050 [INFO] Received: 113 alerts, 28 jams, 0 irregularities
+2026-05-18 11:15:00,233 [INFO] Inserted 113 alerts
+2026-05-18 11:15:00,297 [INFO] Inserted 28 jams
+2026-05-18 11:15:00,299 [INFO] No irregularities to insert
+2026-05-18 11:15:00,301 [INFO] Cycle complete in 1.58s — 113 alerts, 28 jams, 0 irregularities
+2026-05-18 11:16:30,314 [INFO] Fetching Waze feed...
+2026-05-18 11:16:31,306 [INFO] Received: 109 alerts, 30 jams, 0 irregularities
+2026-05-18 11:16:31,488 [INFO] Inserted 109 alerts
+2026-05-18 11:16:31,572 [INFO] Inserted 30 jams
+2026-05-18 11:16:31,575 [INFO] No irregularities to insert
+2026-05-18 11:16:31,581 [INFO] Cycle complete in 1.27s — 109 alerts, 30 jams, 0 irregularities
+2026-05-18 11:18:01,589 [INFO] Fetching Waze feed...
+2026-05-18 11:18:02,682 [INFO] Received: 114 alerts, 31 jams, 0 irregularities
+2026-05-18 11:18:02,871 [INFO] Inserted 114 alerts
+2026-05-18 11:18:02,953 [INFO] Inserted 31 jams
+2026-05-18 11:18:02,955 [INFO] No irregularities to insert
+2026-05-18 11:18:02,957 [INFO] Cycle complete in 1.37s — 114 alerts, 31 jams, 0 irregularities
+2026-05-18 11:19:32,971 [INFO] Fetching Waze feed...
+2026-05-18 11:19:33,997 [INFO] Received: 113 alerts, 34 jams, 0 irregularities
+2026-05-18 11:19:34,176 [INFO] Inserted 113 alerts
+2026-05-18 11:19:34,272 [INFO] Inserted 34 jams
+2026-05-18 11:19:34,274 [INFO] No irregularities to insert
+2026-05-18 11:19:34,276 [INFO] Cycle complete in 1.31s — 113 alerts, 34 jams, 0 irregularities
+2026-05-18 11:21:04,283 [INFO] Fetching Waze feed...
+2026-05-18 11:21:05,320 [INFO] Received: 112 alerts, 34 jams, 0 irregularities
+2026-05-18 11:21:05,527 [INFO] Inserted 112 alerts
+2026-05-18 11:21:05,613 [INFO] Inserted 34 jams
+2026-05-18 11:21:05,619 [INFO] No irregularities to insert
+2026-05-18 11:21:05,621 [INFO] Cycle complete in 1.34s — 112 alerts, 34 jams, 0 irregularities
+2026-05-18 11:22:35,628 [INFO] Fetching Waze feed...
+2026-05-18 11:22:36,695 [INFO] Received: 111 alerts, 34 jams, 0 irregularities
+2026-05-18 11:22:36,904 [INFO] Inserted 111 alerts
+2026-05-18 11:22:36,993 [INFO] Inserted 34 jams
+2026-05-18 11:22:36,995 [INFO] No irregularities to insert
+2026-05-18 11:22:36,997 [INFO] Cycle complete in 1.37s — 111 alerts, 34 jams, 0 irregularities
