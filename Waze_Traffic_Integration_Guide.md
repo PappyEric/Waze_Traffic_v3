@@ -144,7 +144,6 @@ Restart-Service WazeTrafficIngest
 
 #### Where are the logs located?
 
-Logs are written on `ADMIN8854` at:
-`D:\Gemini_Projects\Waze_Traffic_v3\ingest\logs\waze_ingest.log`
+Logs are output to standard output (`stdout`) to prevent disk write overhead. If running as a Windows Service, runtime errors are captured and written to the Windows Application Event Log under the `WazeTrafficIngest` source.
 
 ---

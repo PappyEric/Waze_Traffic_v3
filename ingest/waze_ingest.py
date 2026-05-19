@@ -56,18 +56,11 @@ REQUEST_TIMEOUT = 25
 # LOGGING
 # ============================================================================
 
-LOG_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "logs")
-os.makedirs(LOG_DIR, exist_ok=True)
-
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
         logging.StreamHandler(sys.stdout),
-        logging.FileHandler(
-            os.path.join(LOG_DIR, "waze_ingest.log"),
-            encoding="utf-8"
-        ),
     ],
 )
 logger = logging.getLogger("WazeIngest")
