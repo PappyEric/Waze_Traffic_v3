@@ -56,14 +56,22 @@ REQUEST_TIMEOUT = 25
 # LOGGING
 # ============================================================================
 
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(message)s",
-    handlers=[
-        logging.StreamHandler(sys.stdout),
-    ],
-)
+# --- TO ENABLE LOGGING FOR TROUBLESHOOTING, UNCOMMENT THE BLOCK BELOW ---
+# logging.basicConfig(
+#     level=logging.INFO,
+#     format="%(asctime)s [%(levelname)s] %(message)s",
+#     handlers=[
+#         logging.StreamHandler(sys.stdout),
+#     ],
+# )
+# ------------------------------------------------------------------------
+
 logger = logging.getLogger("WazeIngest")
+
+# Silence the logger when the basicConfig block is commented out to prevent output
+if not logging.getLogger().handlers:
+    logger.addHandler(logging.NullHandler())
+
 
 
 # ============================================================================
