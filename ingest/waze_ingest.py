@@ -43,7 +43,7 @@ CONNECTION_STRING = (
     f"SERVER={DB_SERVER};"
     f"DATABASE={DB_NAME};"
     f"UID=nwssvc;"
-    f"PWD=!K@n@w@h@911;"
+    f"PWD=PASSWORD;"
 )
 
 # Polling interval in seconds
