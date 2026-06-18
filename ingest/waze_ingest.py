@@ -43,7 +43,7 @@ CONNECTION_STRING = (
     f"SERVER={DB_SERVER};"
     f"DATABASE={DB_NAME};"
     f"UID=nwssvc;"
-    f"PWD=PASSWORD;"
+    f"PWD=!K@n@w@h@911;"
 )
 
 # Polling interval in seconds
@@ -57,13 +57,13 @@ REQUEST_TIMEOUT = 25
 # ============================================================================
 
 # --- TO ENABLE LOGGING FOR TROUBLESHOOTING, UNCOMMENT THE BLOCK BELOW ---
-# logging.basicConfig(
-#     level=logging.INFO,
-#     format="%(asctime)s [%(levelname)s] %(message)s",
-#     handlers=[
-#         logging.StreamHandler(sys.stdout),
-#     ],
-# )
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    handlers=[
+        logging.StreamHandler(sys.stdout),
+    ],
+)
 # ------------------------------------------------------------------------
 
 logger = logging.getLogger("WazeIngest")
