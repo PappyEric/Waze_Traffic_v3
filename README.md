@@ -13,13 +13,42 @@ The integration follows a "Truncate and Reload" pattern to keep GIS data perfect
 
 ---
 
-## 2. Database Preparation
+## 2. Waze Partner Account & Custom Feed URL
+
+To ingest live traffic data, your agency must have a **Waze for Cities (Waze Partner) account**:
+- **Cost**: **Free** for public safety agencies, DOTs, municipalities, and 911 emergency communications centers.
+- **Registration**: Sign up at [Waze for Cities](https://www.waze.com/wazeforcities).
+- **Obtaining your Custom URL**: Once enrolled and approved, log into the **Waze Partner Hub** and navigate to your feeds. Waze provides a custom JSON feed URL formatted like:
+  ```text
+  https://www.waze.com/partnerhub-api/partners/<PARTNER_ID>/waze-feeds/<FEED_UUID>?format=1
+  ```
+
+### Where to Add Your Custom Feed URL in Code:
+
+You configure your custom URL in [`ingest/waze_ingest.py`](file:///d:/Gemini_Projects/Waze_Traffic_v3/ingest/waze_ingest.py):
+
+1. **Directly in the code**: Open [ingest/waze_ingest.py](file:///d:/Gemini_Projects/Waze_Traffic_v3/ingest/waze_ingest.py#L33-L41) and replace the default URL in the `WAZE_FEED_URL` variable under the `# CONFIGURATION` section (around line 34):
+   ```python
+   # Waze Partner Hub API feed URL
+   WAZE_FEED_URL = os.getenv(
+       "WAZE_FEED_URL",
+       (
+           "https://www.waze.com/partnerhub-api/partners/<YOUR_PARTNER_ID>/"
+           "waze-feeds/<YOUR_FEED_UUID>?format=1"
+       ),
+   )
+   ```
+2. **Via Environment Variable (Optional)**: Set the system environment variable `WAZE_FEED_URL` on the host machine. The script checks `os.getenv("WAZE_FEED_URL")` first, allowing seamless deployment without hardcoding the URL.
+
+---
+
+## 3. Database Preparation
 
 Creating the tables manually in SQL often causes "Geometry Type Mismatch" errors in ArcSDE. Use ArcPy to ensure the Geodatabase handles the geometry storage correctly.
 
-### Script: `create_waze_fc.py`
+### Script: `sql/create_via_arcpy.py`
 
-Run this in the ArcGIS Pro Python window to create natively registered feature classes.
+Run this in the ArcGIS Pro Python environment to create natively registered feature classes using the provided `.sde` connection.
 
 ```python
 import arcpy, os
@@ -47,7 +76,7 @@ for name, geo_type in tables:
 
 ---
 
-## 3. SQL Permissions
+## 4. SQL Permissions
 
 For the ingest script and ArcGIS Server to communicate, a service account is required. In this example, we use `nwssvc`.
 
@@ -62,7 +91,7 @@ ALTER ROLE db_owner ADD MEMBER [nwssvc];
 
 ---
 
-## 4. The Ingest Service (`waze_ingest.py`)
+## 5. The Ingest Service (`waze_ingest.py`)
 
 The heart of the system is a Python script that uses `pyodbc` for database operations and `requests` for the API. It runs continuously, pulling new data every 90 seconds.
 
@@ -82,7 +111,7 @@ insert_sql = """
 
 ---
 
-## 5. ArcGIS Server Configuration
+## 6. ArcGIS Server Configuration
 
 To keep the data "live," ArcGIS Server must reference the database directly.
 
@@ -93,7 +122,7 @@ To keep the data "live," ArcGIS Server must reference the database directly.
 
 ---
 
-## 6. Automating the Service
+## 7. Automating the Service
 
 To ensure the script runs 24/7 and restarts if the computer reboots, it is installed as a Windows Service.
 
@@ -110,7 +139,7 @@ Due to internet connectivity restrictions on the database server (`kcpssqlprod`)
 
 ---
 
-## 7. Service Management & Operations
+## 8. Service Management & Operations
 
 ### Service Status and Control
 

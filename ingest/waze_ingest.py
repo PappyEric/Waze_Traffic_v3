@@ -1,15 +1,18 @@
 """
 Waze Real-Time Traffic Feed Ingest Service
 ============================================
-Fetches data from the Waze Partner Hub API every 30 seconds and writes
+Fetches data from the Waze Partner Hub API every 90 seconds and writes
 alerts, jams, and irregularities into ArcSDE-compatible MSSQL tables.
 
 Usage:
-    Manual run:     python waze_ingest.py
-    One-shot test:  python waze_ingest.py --once
+    Manual run:      python waze_ingest.py
+    One-shot test:   python waze_ingest.py --once
     Install service: python install_service.py install
-    
-Connection: Windows Authentication to gisdb02\\gissqlserver
+
+Target Database:
+    Server:   kcpssqlprod
+    Database: NWSAegisGISDB_KanawhaCo_WV
+    Auth:     SQL Authentication (user: nwssvc)
 """
 
 import sys
@@ -21,42 +24,58 @@ import argparse
 from datetime import datetime, timezone
 
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 import pyodbc
 
 # ============================================================================
 # CONFIGURATION
+# Configurable via environment variables with production defaults
 # ============================================================================
 
-# Waze Partner Hub API
-WAZE_FEED_URL = (
-    "https://www.waze.com/partnerhub-api/partners/11564347598/"
-    "waze-feeds/67b4a799-aac0-4584-8253-3b396b4bdf08?format=1"
+# Waze Partner Hub API feed URL
+WAZE_FEED_URL = os.getenv(
+    "WAZE_FEED_URL",
+    (
+        "https://www.waze.com/partnerhub-api/partners/11564347598/"
+        "waze-feeds/67b4a799-aac0-4584-8253-3b396b4bdf08?format=1"
+    ),
 )
 
-# MSSQL Connection (Windows Authentication)
-# Update DB_NAME to your actual geodatabase name
-DB_SERVER = r"kcpssqlprod"
-DB_NAME = "NWSAegisGISDB_KanawhaCo_WV"
+# MSSQL Database Connection
+DB_SERVER = os.getenv("WAZE_DB_SERVER", r"kcpssqlprod")
+DB_NAME = os.getenv("WAZE_DB_NAME", "NWSAegisGISDB_KanawhaCo_WV")
+DB_USER = os.getenv("WAZE_DB_USER", "nwssvc")
+DB_PASSWORD = os.getenv("WAZE_DB_PASSWORD", "!K@n@w@h@911")
 
-CONNECTION_STRING = (
-    f"DRIVER={{ODBC Driver 17 for SQL Server}};"
-    f"SERVER={DB_SERVER};"
-    f"DATABASE={DB_NAME};"
-    f"UID=nwssvc;"
-    f"PWD=!K@n@w@h@911;"
-)
-
-# Polling interval in seconds
-POLL_INTERVAL = 90
+# Polling interval in seconds (default: 90s)
+POLL_INTERVAL = int(os.getenv("WAZE_POLL_INTERVAL", "90"))
 
 # Request timeout in seconds
-REQUEST_TIMEOUT = 25
+REQUEST_TIMEOUT = int(os.getenv("WAZE_REQUEST_TIMEOUT", "25"))
+
+
+def build_connection_string(server=None, database=None, user=None, password=None):
+    """Build ODBC connection string for SQL Server."""
+    s = server or DB_SERVER
+    d = database or DB_NAME
+    u = user or DB_USER
+    p = password or DB_PASSWORD
+    return (
+        f"DRIVER={{ODBC Driver 17 for SQL Server}};"
+        f"SERVER={s};"
+        f"DATABASE={d};"
+        f"UID={u};"
+        f"PWD={p};"
+    )
+
+
+CONNECTION_STRING = build_connection_string()
 
 # ============================================================================
 # LOGGING
 # ============================================================================
 
-# --- TO ENABLE LOGGING FOR TROUBLESHOOTING, UNCOMMENT THE BLOCK BELOW ---
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
@@ -64,22 +83,68 @@ logging.basicConfig(
         logging.StreamHandler(sys.stdout),
     ],
 )
-# ------------------------------------------------------------------------
 
 logger = logging.getLogger("WazeIngest")
 
-# Silence the logger when the basicConfig block is commented out to prevent output
 if not logging.getLogger().handlers:
     logger.addHandler(logging.NullHandler())
 
 
+# ============================================================================
+# HTTP SESSION POOL (Persistent keep-alive & retries)
+# ============================================================================
+
+_session = None
+
+
+def get_http_session():
+    """Return a persistent requests.Session with connection pooling and retries."""
+    global _session
+    if _session is None:
+        _session = requests.Session()
+        retries = Retry(
+            total=3,
+            backoff_factor=1,
+            status_forcelist=[429, 500, 502, 503, 504],
+            raise_on_status=False,
+        )
+        adapter = HTTPAdapter(
+            max_retries=retries,
+            pool_connections=2,
+            pool_maxsize=4,
+        )
+        _session.mount("https://", adapter)
+        _session.mount("http://", adapter)
+    return _session
+
+
+def close_http_session():
+    """Close the persistent HTTP session if open."""
+    global _session
+    if _session is not None:
+        try:
+            _session.close()
+        except Exception:
+            pass
+        _session = None
+
 
 # ============================================================================
-# HELPER FUNCTIONS
+# HELPER FUNCTIONS & LOOKUPS
 # ============================================================================
+
+JAM_COLOR_MAP = {
+    0: "green",       # Free flow
+    1: "green",       # Free flow
+    2: "yellow",      # Light traffic
+    3: "orange",      # Moderate traffic
+    4: "red",         # Heavy traffic
+    5: "darkred",     # Standstill / road closed
+}
+
 
 def epoch_ms_to_datetime(millis):
-    """Convert epoch milliseconds to datetime string for SQL Server."""
+    """Convert epoch milliseconds to formatted datetime string for SQL Server."""
     if millis is None:
         return None
     try:
@@ -91,23 +156,15 @@ def epoch_ms_to_datetime(millis):
 
 def jam_level_to_color(level):
     """Map Waze jam level (0-5) to a traffic color for symbology."""
-    mapping = {
-        0: "green",       # Free flow
-        1: "green",       # Free flow
-        2: "yellow",      # Light traffic
-        3: "orange",      # Moderate traffic
-        4: "red",         # Heavy traffic
-        5: "darkred",     # Standstill / road closed
-    }
-    return mapping.get(level, "green")
+    return JAM_COLOR_MAP.get(level, "green")
 
 
 def build_point_wkt(location):
     """Build a WKT POINT from a Waze location dict {x, y}."""
-    if not location or "x" not in location or "y" not in location:
+    if not location:
         return None
-    x = location["x"]
-    y = location["y"]
+    x = location.get("x")
+    y = location.get("y")
     if x is None or y is None:
         return None
     return f"POINT({x} {y})"
@@ -117,10 +174,11 @@ def build_linestring_wkt(line_array):
     """Build a WKT LINESTRING from a Waze line array [{x, y}, ...]."""
     if not line_array or len(line_array) < 2:
         return None
-    coords = []
-    for pt in line_array:
-        if "x" in pt and "y" in pt and pt["x"] is not None and pt["y"] is not None:
-            coords.append(f"{pt['x']} {pt['y']}")
+    coords = [
+        f"{pt['x']} {pt['y']}"
+        for pt in line_array
+        if pt.get("x") is not None and pt.get("y") is not None
+    ]
     if len(coords) < 2:
         return None
     return f"LINESTRING({', '.join(coords)})"
@@ -131,9 +189,7 @@ def safe_str(value, max_len=None):
     if value is None:
         return None
     s = str(value)
-    if max_len and len(s) > max_len:
-        s = s[:max_len]
-    return s
+    return s[:max_len] if max_len else s
 
 
 def safe_float(value):
@@ -171,17 +227,18 @@ def kmh_to_mph(kmh):
 # ============================================================================
 
 def fetch_waze_feed():
-    """Fetch the Waze Partner Hub JSON feed."""
+    """Fetch the Waze Partner Hub JSON feed using the persistent session."""
     logger.info("Fetching Waze feed...")
     try:
-        response = requests.get(WAZE_FEED_URL, timeout=REQUEST_TIMEOUT)
+        session = get_http_session()
+        response = session.get(WAZE_FEED_URL, timeout=REQUEST_TIMEOUT)
         response.raise_for_status()
         data = response.json()
-        
+
         alerts = data.get("alerts", [])
         jams = data.get("jams", [])
         irregularities = data.get("irregularities", [])
-        
+
         logger.info(
             f"Received: {len(alerts)} alerts, {len(jams)} jams, "
             f"{len(irregularities)} irregularities"
@@ -200,14 +257,14 @@ def fetch_waze_feed():
 # ============================================================================
 
 def get_connection():
-    """Get a pyodbc connection using Windows Authentication."""
+    """Get a pyodbc connection to SQL Server."""
     return pyodbc.connect(CONNECTION_STRING, timeout=10)
 
 
 def ingest_alerts(cursor, alerts):
     """Truncate and reload the WAZE_ALERTS table."""
     cursor.execute("DELETE FROM dbo.WAZE_ALERTS")
-    
+
     if not alerts:
         logger.info("No alerts to insert")
         return 0
@@ -233,11 +290,10 @@ def ingest_alerts(cursor, alerts):
     for alert in alerts:
         wkt = build_point_wkt(alert.get("location"))
         if wkt is None:
-            continue  # Skip alerts without valid location
+            continue
 
         pub_millis = safe_int(alert.get("pubMillis"))
-
-        count += 1  # OBJECTID starts at 1
+        count += 1
         params = (
             count,
             safe_str(alert.get("uuid"), 100),
@@ -262,7 +318,7 @@ def ingest_alerts(cursor, alerts):
         try:
             cursor.execute(insert_sql, params)
         except pyodbc.Error as e:
-            count -= 1  # Roll back the counter on failure
+            count -= 1
             logger.warning(f"Failed to insert alert {alert.get('uuid')}: {e}")
 
     logger.info(f"Inserted {count} alerts")
@@ -272,7 +328,7 @@ def ingest_alerts(cursor, alerts):
 def ingest_jams(cursor, jams):
     """Truncate and reload the WAZE_JAMS table."""
     cursor.execute("DELETE FROM dbo.WAZE_JAMS")
-    
+
     if not jams:
         logger.info("No jams to insert")
         return 0
@@ -298,13 +354,13 @@ def ingest_jams(cursor, jams):
     for jam in jams:
         wkt = build_linestring_wkt(jam.get("line"))
         if wkt is None:
-            continue  # Skip jams without valid geometry
+            continue
 
         level = safe_int(jam.get("level"))
         speed_kmh = safe_float(jam.get("speedKMH"))
         pub_millis = safe_int(jam.get("pubMillis"))
 
-        count += 1  # OBJECTID starts at 1
+        count += 1
         params = (
             count,
             safe_int(jam.get("uuid")),
@@ -340,7 +396,7 @@ def ingest_jams(cursor, jams):
 def ingest_irregularities(cursor, irregularities):
     """Truncate and reload the WAZE_IRREGULARITIES table."""
     cursor.execute("DELETE FROM dbo.WAZE_IRREGULARITIES")
-    
+
     if not irregularities:
         logger.info("No irregularities to insert")
         return 0
@@ -380,7 +436,7 @@ def ingest_irregularities(cursor, irregularities):
         detection_ms = safe_int(irr.get("detectionDateMillis"))
         update_ms = safe_int(irr.get("updateDateMillis"))
 
-        count += 1  # OBJECTID starts at 1
+        count += 1
         params = (
             count,
             safe_int(irr.get("id")),
@@ -425,31 +481,30 @@ def ingest_irregularities(cursor, irregularities):
 def run_ingest_cycle():
     """Execute a single fetch-and-load cycle."""
     start_time = time.time()
-    
+
     try:
         # Fetch data from Waze
         alerts, jams, irregularities = fetch_waze_feed()
-        
-        # Connect to MSSQL and load
+
+        # Connect to MSSQL and load within an atomic transaction
         conn = get_connection()
         cursor = conn.cursor()
-        
+
         try:
-            # All three tables are refreshed atomically
             alert_count = ingest_alerts(cursor, alerts)
             jam_count = ingest_jams(cursor, jams)
             irr_count = ingest_irregularities(cursor, irregularities)
-            
+
             conn.commit()
-            
+
             elapsed = round(time.time() - start_time, 2)
             logger.info(
-                f"Cycle complete in {elapsed}s — "
+                f"Cycle complete in {elapsed}s - "
                 f"{alert_count} alerts, {jam_count} jams, "
                 f"{irr_count} irregularities"
             )
             return True
-            
+
         except Exception as e:
             conn.rollback()
             logger.error(f"Database error, rolled back: {e}")
@@ -457,7 +512,7 @@ def run_ingest_cycle():
         finally:
             cursor.close()
             conn.close()
-            
+
     except Exception as e:
         logger.error(f"Ingest cycle failed: {e}")
         return False
@@ -472,13 +527,13 @@ def run_continuous():
     logger.info(f"  Interval: {POLL_INTERVAL}s")
     logger.info(f"  Feed URL: {WAZE_FEED_URL[:80]}...")
     logger.info("=" * 60)
-    
+
     consecutive_failures = 0
-    max_failures = 10  # After 10 consecutive failures, increase wait time
-    
+    max_failures = 10
+
     while True:
         success = run_ingest_cycle()
-        
+
         if success:
             consecutive_failures = 0
             time.sleep(POLL_INTERVAL)
@@ -506,58 +561,50 @@ if __name__ == "__main__":
     parser.add_argument(
         "--once",
         action="store_true",
-        help="Run a single ingest cycle and exit"
+        help="Run a single ingest cycle and exit",
     )
     parser.add_argument(
         "--server",
         type=str,
         default=None,
-        help=f"Override SQL Server instance (default: {DB_SERVER})"
+        help=f"Override SQL Server instance (default: {DB_SERVER})",
     )
     parser.add_argument(
         "--database",
         type=str,
         default=None,
-        help=f"Override database name (default: {DB_NAME})"
+        help=f"Override database name (default: {DB_NAME})",
     )
     parser.add_argument(
         "--interval",
         type=int,
         default=None,
-        help=f"Override poll interval in seconds (default: {POLL_INTERVAL})"
+        help=f"Override poll interval in seconds (default: {POLL_INTERVAL})",
     )
-    
+
     args = parser.parse_args()
-    
+
     # Apply overrides
     if args.server:
         DB_SERVER = args.server
-        CONNECTION_STRING = (
-            f"DRIVER={{ODBC Driver 17 for SQL Server}};"
-            f"SERVER={DB_SERVER};"
-            f"DATABASE={DB_NAME};"
-            f"UID=nwssvc;"
-            f"PWD=!K@n@w@h@911;"
-        )
     if args.database:
         DB_NAME = args.database
-        CONNECTION_STRING = (
-            f"DRIVER={{ODBC Driver 17 for SQL Server}};"
-            f"SERVER={DB_SERVER};"
-            f"DATABASE={DB_NAME};"
-            f"UID=nwssvc;"
-            f"PWD=!K@n@w@h@911;"
-        )
     if args.interval:
         POLL_INTERVAL = args.interval
-    
+
+    CONNECTION_STRING = build_connection_string(
+        server=DB_SERVER, database=DB_NAME
+    )
+
     if args.once:
         logger.info("Running single ingest cycle...")
         success = run_ingest_cycle()
+        close_http_session()
         sys.exit(0 if success else 1)
     else:
         try:
             run_continuous()
         except KeyboardInterrupt:
             logger.info("Shutting down (Ctrl+C)")
+            close_http_session()
             sys.exit(0)

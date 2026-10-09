@@ -9,8 +9,8 @@ Usage (run from elevated/admin command prompt):
     Remove:    python install_service.py remove
     Debug:     python install_service.py debug
 
-The service runs under the same Windows account that installs it,
-which must have SQL Server access via Windows Authentication.
+The service runs under the LocalSystem account (or configured service account),
+connecting to SQL Server on kcpssqlprod.
 """
 
 import sys
@@ -21,7 +21,7 @@ import win32event
 import win32service
 import win32serviceutil
 
-# Add the parent directory to sys.path so we can import waze_ingest
+# Add current directory to sys.path so we can import waze_ingest
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -32,7 +32,7 @@ class WazeTrafficIngestService(win32serviceutil.ServiceFramework):
     _svc_display_name_ = "Waze Traffic Ingest Service"
     _svc_description_ = (
         "Fetches real-time traffic data from the Waze Partner Hub API "
-        "every 30 seconds and loads it into the ArcSDE MSSQL database "
+        "every 90 seconds and loads it into the ArcSDE MSSQL database "
         "for use as a dynamic GIS layer in 911 CAD."
     )
 
@@ -79,6 +79,12 @@ class WazeTrafficIngestService(win32serviceutil.ServiceFramework):
             )
             if result == win32event.WAIT_OBJECT_0:
                 break
+
+        # Graceful cleanup on service stop
+        try:
+            waze_ingest.close_http_session()
+        except Exception:
+            pass
 
         servicemanager.LogMsg(
             servicemanager.EVENTLOG_INFORMATION_TYPE,

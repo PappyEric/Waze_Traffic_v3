@@ -2,8 +2,7 @@
 Create Waze feature classes via ArcPy
 ======================================
 Creates the three Waze feature classes using arcpy.management.CreateFeatureClass
-which respects the geodatabase's geometry storage configuration. This replaces
-the raw SQL approach that failed with ERROR 003740.
+which respects the geodatabase's geometry storage configuration. 
 
 Run from ArcGIS Pro's Python window:
     exec(open(r'd:/Gemini_Projects/Waze_Traffic_v3/sql/create_via_arcpy.py').read())
@@ -22,21 +21,28 @@ except ImportError:
 # CONFIGURATION
 # ============================================================================
 
-SDE_CONNECTION = None  # Auto-detect
+DEFAULT_SDE = os.path.join(
+    os.path.dirname(os.path.abspath(__file__)),
+    "kcpssqlprod_NWSAegisGISDB_admin.sde"
+)
+SDE_CONNECTION = DEFAULT_SDE if os.path.exists(DEFAULT_SDE) else None
 
 SPATIAL_REF = arcpy.SpatialReference(4326)  # WGS 1984
 
 
 def find_sde_connection():
-    """Find the .sde connection file for gisdb02."""
+    """Find the .sde connection file for kcpssqlprod."""
+    if SDE_CONNECTION and os.path.exists(SDE_CONNECTION):
+        return SDE_CONNECTION
     search_dirs = [
+        os.path.dirname(os.path.abspath(__file__)),
         os.path.join(os.environ.get("APPDATA", ""), "Esri", "ArcGISPro", "Favorites"),
     ]
     for search_dir in search_dirs:
         if not os.path.isdir(search_dir):
             continue
         for f in os.listdir(search_dir):
-            if f.endswith(".sde") and "gisdb02" in f.lower():
+            if f.endswith(".sde") and ("kcpssqlprod" in f.lower() or "nwsaegis" in f.lower()):
                 return os.path.join(search_dir, f)
     return None
 
@@ -209,12 +215,12 @@ def create_feature_class(sde_conn, fc_def):
 
 def main():
     print("=" * 60)
-    print("Waze Traffic — Create Feature Classes via ArcPy")
+    print("Waze Traffic - Create Feature Classes via ArcPy")
     print("=" * 60)
     
     sde_conn = SDE_CONNECTION or find_sde_connection()
     if not sde_conn:
-        print("ERROR: No .sde connection found for gisdb02")
+        print("ERROR: No .sde connection found for kcpssqlprod")
         return False
     
     print(f"\nUsing: {sde_conn}")
@@ -239,8 +245,8 @@ def main():
     print("SUMMARY")
     print(f"{'='*60}")
     for name, ok in results.items():
-        status = "✓ Created" if ok else "✗ Failed"
-        print(f"  {status}  {name}")
+        status = "[OK] Created " if ok else "[XX] Failed  "
+        print(f"  {status} {name}")
     
     if all(results.values()):
         print("\nAll feature classes created!")
