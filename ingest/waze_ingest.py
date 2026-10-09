@@ -12,7 +12,7 @@ Usage:
 Target Database:
     Server:   kcpssqlprod
     Database: NWSAegisGISDB_KanawhaCo_WV
-    Auth:     SQL Authentication (user: nwssvc)
+    Auth:     SQL Authentication (user: waze_client)
 """
 
 import sys
@@ -33,20 +33,20 @@ import pyodbc
 # Configurable via environment variables with production defaults
 # ============================================================================
 
-# Waze Partner Hub API feed URL
+# Waze Partner Hub API feed URL (obtain from your free Waze Partner account)
 WAZE_FEED_URL = os.getenv(
     "WAZE_FEED_URL",
     (
-        "https://www.waze.com/partnerhub-api/partners/11564347598/"
-        "waze-feeds/67b4a799-aac0-4584-8253-3b396b4bdf08?format=1"
+        "https://www.waze.com/partnerhub-api/partners/<YOUR_PARTNER_ID>/"
+        "waze-feeds/<YOUR_FEED_UUID>?format=1"
     ),
 )
 
 # MSSQL Database Connection
 DB_SERVER = os.getenv("WAZE_DB_SERVER", r"kcpssqlprod")
 DB_NAME = os.getenv("WAZE_DB_NAME", "NWSAegisGISDB_KanawhaCo_WV")
-DB_USER = os.getenv("WAZE_DB_USER", "nwssvc")
-DB_PASSWORD = os.getenv("WAZE_DB_PASSWORD", "!K@n@w@h@911")
+DB_USER = os.getenv("WAZE_DB_USER", "waze_client")
+DB_PASSWORD = os.getenv("WAZE_DB_PASSWORD", "YOUR_DB_PASSWORD")
 
 # Polling interval in seconds (default: 90s)
 POLL_INTERVAL = int(os.getenv("WAZE_POLL_INTERVAL", "90"))

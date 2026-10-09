@@ -16,10 +16,10 @@ $pythonPaths = @(
     "C:\Program Files\Python312\python.exe",
     "C:\Program Files\Python313\python.exe",
     "C:\Program Files\Python314\python.exe",
-    "C:\Users\nwssvc\AppData\Local\Programs\Python\Python311\python.exe",
-    "C:\Users\nwssvc\AppData\Local\Programs\Python\Python312\python.exe",
-    "C:\Users\nwssvc\AppData\Local\Programs\Python\Python313\python.exe",
-    "C:\Users\nwssvc\AppData\Local\Programs\Python\Python314\python.exe"
+    "C:\Users\waze_client\AppData\Local\Programs\Python\Python311\python.exe",
+    "C:\Users\waze_client\AppData\Local\Programs\Python\Python312\python.exe",
+    "C:\Users\waze_client\AppData\Local\Programs\Python\Python313\python.exe",
+    "C:\Users\waze_client\AppData\Local\Programs\Python\Python314\python.exe"
 )
 
 $found = $null

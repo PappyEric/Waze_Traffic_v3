@@ -16,6 +16,7 @@ The integration follows a "Truncate and Reload" pattern to keep GIS data perfect
 ## 2. Waze Partner Account & Custom Feed URL
 
 To ingest live traffic data, your agency must have a **Waze for Cities (Waze Partner) account**:
+
 - **Cost**: **Free** for public safety agencies, DOTs, municipalities, and 911 emergency communications centers.
 - **Registration**: Sign up at [Waze for Cities](https://www.waze.com/wazeforcities).
 - **Obtaining your Custom URL**: Once enrolled and approved, log into the **Waze Partner Hub** and navigate to your feeds. Waze provides a custom JSON feed URL formatted like:
@@ -78,15 +79,15 @@ for name, geo_type in tables:
 
 ## 4. SQL Permissions
 
-For the ingest script and ArcGIS Server to communicate, a service account is required. In this example, we use `nwssvc`.
+For the ingest script and ArcGIS Server to communicate, a service account is required. In this example, we use `waze_client`.
 
 1.  **Create SQL Login**: Enable SQL Authentication.
 2.  **Grant Permissions**: The ingest script requires `db_owner` on the specific GIS database to perform `DELETE` and `INSERT` operations.
 3.  **Default Schema**: Set the default schema for the user to `dbo`.
 
 ```sql
-ALTER USER [nwssvc] WITH DEFAULT_SCHEMA = dbo;
-ALTER ROLE db_owner ADD MEMBER [nwssvc];
+ALTER USER [waze_client] WITH DEFAULT_SCHEMA = dbo;
+ALTER ROLE db_owner ADD MEMBER [waze_client];
 ```
 
 ---
@@ -115,7 +116,7 @@ insert_sql = """
 
 To keep the data "live," ArcGIS Server must reference the database directly.
 
-1.  **Register Data Store**: In ArcGIS Server Manager, register your MSSQL database. Use the `nwssvc` SQL credentials so the server doesn't rely on Windows permissions.
+1.  **Register Data Store**: In ArcGIS Server Manager, register your MSSQL database. Use the `waze_client` SQL credentials so the server doesn't rely on Windows permissions.
 2.  **Publishing**:
     - **Cashing**: MUST be set to "Draw this map service dynamically from the data."
     - **Refresh**: Ensure "Reference registered data" is selected in the publishing wizard.
@@ -135,7 +136,7 @@ Due to internet connectivity restrictions on the database server (`kcpssqlprod`)
 - **Service Name**: `WazeTrafficIngest`
 - **Refresh Rate**: 90 Seconds
 - **Database**: `NWSAegisGISDB_KanawhaCo_WV`
-- **Service Account**: `nwssvc`
+- **Service Account**: `waze_client`
 
 ---
 
@@ -161,7 +162,7 @@ Restart-Service WazeTrafficIngest
 
 ### 💡 Frequently Asked Operational Questions
 
-#### Does it run when I log out of `emeadows`?
+#### Does it run when I log out of `useraccount`?
 
 **Yes.** The service runs in the background under the System context. Once installed, it is completely independent of user logon sessions. You can safely log off, and it will keep polling.
 

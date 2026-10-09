@@ -18,3 +18,8 @@ ingest/logs/
 Thumbs.db
 *.tmp
 *.swp
+
+# User-specific / private credentials backup (never committed or shared)
+private/
+local_private/
+*.sde
